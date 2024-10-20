@@ -82,6 +82,22 @@ Amazon Bedrock is a fully managed, serverless service that provides access to hi
 - **Serverless**: Eliminates the need for infrastructure management, simplifying the deployment and scaling of AI capabilities.
 - **Security and Privacy Guardrails**: Features robust controls to restrict AI outputs, preventing the generation of inappropriate content and restricting sensitive advice like financial recommendations, ensuring ethical and compliant AI usage.
 
+### AWS Glue Overview
+
+AWS Glue is a fully managed, cloud-optimized ETL (Extract, Transform, Load) service that helps prepare and load data for analytics and AI models.
+
+#### Features
+
+- **AWS Glue ETL Service**
+  - Cloud-based ETL service for data preparation with built-in transformations like dropping duplicates and filling missing values.
+  - Example Workflow: AWS Kinesis Data Streams -> AWS Glue ETL Job -> CSV to Parquet -> S3 Data Lake.
+- **AWS Glue Data Catalog**
+  - Centralized repository for managing and monitoring ETL jobs, storing metadata (schemas, not data) with built-in classifiers.
+- **AWS Glue Databrew**
+  - Visual tool for data preparation, defining data quality rules, and saving transformations as "recipes."
+- **AWS Glue Data Quality**
+  - Detects anomalies and recommends data quality rules for ensuring clean, high-quality data for AI models.
+
 ## Tables
 
 ### Traditional ML vs Deep Learning
