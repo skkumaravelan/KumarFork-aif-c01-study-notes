@@ -417,6 +417,8 @@ AWS Glue is a fully managed, cloud-optimized ETL (Extract, Transform, Load) serv
 #### Amazon Redshift
 - A fully managed data warehouse service that enables fast querying of large datasets. It can be used for analyzing training data or running complex queries on model outputs.
 
+---
+
 ### Data
 
 #### Amazon S3
