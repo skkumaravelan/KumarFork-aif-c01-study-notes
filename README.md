@@ -416,3 +416,15 @@ AWS Glue is a fully managed, cloud-optimized ETL (Extract, Transform, Load) serv
 | **Beyond the Imitation Game Benchmark (BIG-bench)**  | Evaluates models on creative and difficult AI tasks not covered by standard benchmarks. |
 | **Perplexity**                                       | Measures how well a model predicts the likelihood of the next token or word. |
 
+### Generative AI Models
+
+| Generative AI Model                            | Examples                               | Use Case/What It's Good For                              |
+|------------------------------------------------|----------------------------------------|----------------------------------------------------------|
+| **Generative Adversarial Networks (GANs)**     | StyleGAN, CycleGAN, ProGAN             | Image generation, face synthesis, video creation          |
+| **Variational Autoencoders (VAEs)**            | Kingma & Welling VAE, Beta-VAE         | Image denoising, anomaly detection, image compression     |
+| **Transformers**                               | GPT-4, BERT, T5                        | Text generation, language translation, content generation |
+| **Recurrent Neural Networks (RNNs)**           | LSTMs, GRUs                            | Sequential data, time series forecasting, language models |
+| **Reinforcement Learning for Generative Tasks** | AlphaGo, DQN, OpenAI Five              | Game AI, autonomous control, optimizing generative tasks  |
+| **Diffusion**                                  | Stable Diffusion, DALL·E 2, Imagen     | Image and text-to-image generation                        |
+| **Flow-Based Models**                          | Glow, RealNVP                          | High-quality image generation, density estimation         |
+
