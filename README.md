@@ -96,7 +96,8 @@ Here's the updated section for Amazon Bedrock features, formatted as per your re
     - Exclusive to Amazon Bedrock, Amazon Titan models are pretrained, high-performing foundation models created by AWS, designed for a wide range of use cases with responsible AI practices.
 - **Customization**  
   - Customize foundation models privately with your data using techniques such as fine-tuning and Retrieval Augmented Generation (RAG), enhancing the model's relevance and accuracy.
-- **Retrieval Augmented Generation (RAG)**  
+- **Bedrock Knowledge Bases**
+  - Uses Retrieval Augmented Generation (RAG) to fetch data from private sources, delivering more relevant and accurate responses with full support for the RAG workflow—handling data ingestion, retrieval, and prompt augmentation.
   - Enhances outputs by integrating retrieval processes that pull relevant external knowledge into the generative model.
 - **Bedrock Agents**  
   - Create agents capable of planning and executing multistep tasks using company systems and data sources—streamlining complex tasks such as customer inquiries and order processing.
