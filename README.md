@@ -345,6 +345,10 @@ The typical SageMaker training process includes several key elements that help c
   - Automatically builds, trains, and tunes machine learning models while giving you full visibility and control over the process.
 - **Amazon Augmented AI (A2I)**
   - Allows you to add human review for low-confidence predictions or random samples, ensuring more accurate results.
+- **SageMaker Managed Spot Training**
+  - Reduces the cost of training models by using spare AWS EC2 capacity.
+- **SageMaker Profiler**
+  - Identifies resource inefficiencies in training jobs to minimize cost without sacrificing speed or accuracy.
 
 ---
 
