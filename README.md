@@ -157,7 +157,6 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
   - Feature Selection: Identifying the most relevant features from your dataset based on domain knowledge, reducing dimensionality and improving model efficiency.
   - Feature Creation: Transforming raw data into new features (e.g., scaling, encoding categorical variables, and deriving new metrics from existing ones).
   - Feature Transformation: Applying mathematical or statistical transformations (e.g., normalization, standardization) to improve model convergence and performance.
-
 - Automated Feature Engineering: Consider using SageMaker Autopilot, which can automatically generate and rank features that could improve model performance.
 - Dimensionality Reduction: Techniques like Principal Component Analysis (PCA) can be applied to reduce the number of features while retaining the most important information.
 - Feature Scaling: Tools like AWS Glue or SageMaker DataBrew can be used to apply scaling techniques (e.g., normalization or standardization), ensuring that features contribute equally to model training.
