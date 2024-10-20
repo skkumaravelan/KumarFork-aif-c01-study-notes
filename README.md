@@ -334,6 +334,69 @@ AWS Glue is a fully managed, cloud-optimized ETL (Extract, Transform, Load) serv
 - **AWS Glue Data Quality**
   - Detects anomalies and recommends data quality rules for ensuring clean, high-quality data for AI models.
 
+---
+
+## Additional AWS Services and Resources
+
+### Security and Compliance Tools
+
+#### Identity and Access Management (IAM)
+- Manages access to AWS services and resources securely. You can define who (identity) has what access (roles and permissions) to resources.
+
+#### AWS Macie
+- Helps you discover and protect sensitive data like PII (Personally Identifiable Information) using machine learning.
+
+#### AWS PrivateLink
+- Provides secure, private connectivity between VPCs, AWS services, and on-premises applications without exposing traffic to the public internet.
+
+#### AWS Lake Formation
+- Simplifies the process of setting up data lakes, making it easier to securely store, catalog, and analyze large amounts of data.
+
+#### AWS Shared Responsibility Model
+- Defines the division of responsibilities between AWS and the customer in terms of security and compliance. AWS handles the security *of* the cloud, while customers are responsible for security *in* the cloud.
+
+---
+
+### AWS Governance and Audit Services
+
+#### AWS Artifact
+- Provides on-demand access to security and compliance reports and select online agreements.
+
+#### Customer Compliance Center
+- Offers resources to help customers understand and meet their compliance requirements using AWS.
+
+#### AWS Audit Manager
+- Continuously audits AWS usage to assess compliance with industry standards and regulations.
+
+---
+
+### AWS Monitoring and Security Services
+
+#### AWS CloudTrail
+- Captures API calls and related events to track user activity across AWS services.
+
+#### AWS Config
+- Continuously monitors and records AWS resource configurations and changes.
+  - **Conformance Packs**: Predefined rules to assess compliance with best practices. You can also configure auto-remediation for non-compliant resources.
+
+#### Amazon Inspector
+- Performs automated security assessments at the application level to identify vulnerabilities and deviations from best practices.
+
+#### AWS Trusted Advisor
+- Provides recommendations to help you:
+  - Reduce costs.
+  - Improve security.
+  - Increase performance.
+
+---
+
+### Storage and Security
+
+#### S3
+- **Block Public Access**: Amazon S3 allows you to enable “Block Public Access” settings to prevent unauthorized public access to S3 buckets and objects.
+
+---
+
 ## Tables
 
 ### Traditional ML vs Deep Learning
