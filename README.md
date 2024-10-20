@@ -92,6 +92,8 @@ Here's the updated section for Amazon Bedrock features, formatted as per your re
 #### Features
 - **Model Choice**  
   - Access a variety of foundation models from AI21 Labs, Anthropic, Cohere, Meta, Mistral AI, Stability AI, and Amazon, allowing for optimal model selection based on specific application needs.
+  - Amazon Titan Models
+    - Exclusive to Amazon Bedrock, Amazon Titan models are pretrained, high-performing foundation models created by AWS, designed for a wide range of use cases with responsible AI practices.
 - **Customization**  
   - Customize foundation models privately with your data using techniques such as fine-tuning and Retrieval Augmented Generation (RAG), enhancing the model's relevance and accuracy.
 - **Retrieval Augmented Generation (RAG)**  
