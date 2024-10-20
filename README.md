@@ -87,13 +87,21 @@ Amazon SageMaker is an integrated machine learning service that enables develope
 
 Amazon Bedrock is a fully managed, serverless service that provides access to high-performing foundation models (FMs) from leading AI companies through a single API. It is designed to facilitate the creation of generative AI applications, prioritizing security, privacy, and responsible AI.
 
+Here's the updated section for Amazon Bedrock features, formatted as per your request:
+
 #### Features
-- **Model Choice**: Access a variety of foundation models from AI21 Labs, Anthropic, Cohere, Meta, Mistral AI, Stability AI, and Amazon, allowing for optimal model selection based on specific application needs.
-- **Customization**: Customize foundation models privately with your data using techniques such as fine-tuning and Retrieval Augmented Generation (RAG), enhancing the model's relevance and accuracy.
-- **Retrieval Augmented Generation (RAG)**: Enhances outputs by integrating retrieval processes that pull relevant external knowledge into the generative model.
-- **Bedrock Agents**: Create agents capable of planning and executing multistep tasks using company systems and data sources—streamlining complex tasks such as customer inquiries and order processing.
-- **Serverless**: Eliminates the need for infrastructure management, simplifying the deployment and scaling of AI capabilities.
-- **Security and Privacy Guardrails**: Features robust controls to restrict AI outputs, preventing the generation of inappropriate content and restricting sensitive advice like financial recommendations, ensuring ethical and compliant AI usage.
+- **Model Choice**  
+  - Access a variety of foundation models from AI21 Labs, Anthropic, Cohere, Meta, Mistral AI, Stability AI, and Amazon, allowing for optimal model selection based on specific application needs.
+- **Customization**  
+  - Customize foundation models privately with your data using techniques such as fine-tuning and Retrieval Augmented Generation (RAG), enhancing the model's relevance and accuracy.
+- **Retrieval Augmented Generation (RAG)**  
+  - Enhances outputs by integrating retrieval processes that pull relevant external knowledge into the generative model.
+- **Bedrock Agents**  
+  - Create agents capable of planning and executing multistep tasks using company systems and data sources—streamlining complex tasks such as customer inquiries and order processing.
+- **Serverless**  
+  - Eliminates the need for infrastructure management, simplifying the deployment and scaling of AI capabilities.
+- **Security and Privacy Guardrails**  
+  - Features robust controls to restrict AI outputs, preventing the generation of inappropriate content and restricting sensitive advice like financial recommendations, ensuring ethical and compliant AI usage.
 
 ---
 
