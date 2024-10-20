@@ -401,10 +401,24 @@ AWS Glue is a fully managed, cloud-optimized ETL (Extract, Transform, Load) serv
 
 ---
 
-### Storage and Security
+### Analytics 
 
-#### S3
-- **Block Public Access**: Amazon S3 allows you to enable “Block Public Access” settings to prevent unauthorized public access to S3 buckets and objects.
+#### Amazon QuickSight
+- A scalable business intelligence (BI) tool for creating and sharing interactive dashboards and reports. Useful for visualizing and monitoring model performance.
+
+#### Amazon Redshift
+- A fully managed data warehouse service that enables fast querying of large datasets. It can be used for analyzing training data or running complex queries on model outputs.
+
+### Data
+
+#### Amazon S3
+- Used for storing model input (training data) and model output (trained models, results). It's scalable and reliable for handling large datasets.
+
+#### AWS Data Exchange
+- Allows access to third-party datasets for data input, enriching training data or enhancing model evaluation.
+
+#### Amazon EMR
+- Processes large datasets with tools like Hadoop and Spark. Used for data input transformation and pre-processing before model training.
 
 ---
 
