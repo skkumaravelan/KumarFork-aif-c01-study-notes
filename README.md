@@ -84,6 +84,17 @@ Amazon Bedrock is a fully managed, serverless service that provides access to hi
 
 ## Tables
 
+### Traditional ML vs Deep Learning
+
+| Category          | Traditional ML                                      | Deep Learning                                 |
+|-------------------|-----------------------------------------------------|-----------------------------------------------|
+| **Task Complexity** | Well-defined tasks                                  | Complex tasks                                 |
+| **Data Type**      | Structured / Labeled Data                           | Unstructured Data (Images, Video, Text)       |
+| **Methodology**    | Solves problems through statistics and mathematics  | Utilizes neural networks                      |
+| **Feature Handling** | Manually select and extract features                | Features are learned automatically by the model |
+| **Cost**           | Less costly                                         | Higher costs due to computational demands     |
+
+
 ### Types of Machine Learning
 
 | Learning Type         | Description                                          | Challenges                            | AWS Tools              | Common Use Cases                   |
