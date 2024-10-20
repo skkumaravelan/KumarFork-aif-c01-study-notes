@@ -4,6 +4,75 @@
 - [Official Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-ai-practitioner/AWS-Certified-AI-Practitioner_Exam-Guide.pdf)
 - [Official Exam Prep - Amazon Skill Builder](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/19554/exam-prep-standard-course-aws-certified-ai-practitioner-aif-c01)
 
+## General AI
+
+### Machine Learning (ML)
+- **Definition**: A subset of AI that enables systems to learn from data and make predictions or decisions without explicit programming or rules.
+- **Key Concept**: AI that operates through data patterns and training, rather than explicitly coded instructions.
+
+---
+
+### Generative AI
+- **Definition**: A subset of deep learning that creates new solutions based on learned data, typically using foundation models.
+- **Key Concept**: AI systems that generate novel outputs, such as images, text, or music, from learned data patterns.
+
+#### In-Context Learning
+- **Definition**: A method of enhancing generative AI models by adding additional data and examples to the prompt, helping the model solve tasks more effectively.
+
+#### Prompt Types
+- **Few-Shot Prompt**: Providing a few examples in the prompt to guide the model’s behavior.
+- **Zero-Shot Prompt**: Providing no examples in the prompt, asking the model to perform the task without guidance.
+- **One-Shot Prompt**: Providing exactly one example to guide the model’s behavior.
+- **Prompt Template**: A pre-defined format or structure for prompts to standardize and improve the interaction with AI models.
+- **Chain-of-Thought Prompting**: A method where the prompt encourages the model to break down reasoning into steps.
+- **Prompt Tuning**: The process of adjusting prompts to improve model performance for specific tasks.
+
+#### Latent Space
+- **Definition**: The encoded knowledge or patterns captured by large language models (LLMs) that store relationships between data.
+- **Usage**: It represents the internal understanding of language or data that AI models use to generate outputs.
+
+#### Embeddings
+- **Definition**: Numerical, vectorized representations of tokens (words, phrases, etc.) that capture their semantic meaning.
+- **Use Case**: Used for tasks like semantic search, where the meaning of a word or token is important.
+- **Storage**: Can be stored in a vector database for efficient search and retrieval.
+
+---
+
+### Search Methods
+- **Keyword Search**: Matches exact terms in the search query.
+- **Semantic Search**: Uses embeddings to understand the meaning behind the search query, allowing for more accurate and meaningful results.
+
+---
+
+### Vector Database
+- **Definition**: A type of database designed for storing and querying vectors (embeddings), which is useful for tasks like semantic search.
+
+#### Vector Database Options on AWS
+- **Amazon OpenSearch Service**: Supports k-nearest neighbor (k-NN) search for vector databases. Useful for log analytics, real-time application monitoring, and search.
+- **Amazon Aurora PostgreSQL-Compatible Edition & Amazon RDS for PostgreSQL**: Supports the pgvector extension, enabling efficient storage of embeddings and similarity searches.
+- **Amazon Neptune ML**: Uses Graph Neural Networks (GNNs) to make predictions based on graph data, supporting vectorized data in graph databases.
+- **Amazon MemoryDB**: Supports high-speed vector storage and retrieval with millisecond query times and tens of thousands of queries per second (QPS).
+- **Amazon DocumentDB**: Supports vector search with MongoDB compatibility, enabling storage, indexing, and search of millions of vectors with millisecond response times.
+
+---
+
+### Large Language Models (LLMs)
+- **Definition**: Advanced AI models trained on vast amounts of data to perform a variety of language-related tasks.
+- **Types**:
+  - **Unimodal**: Works with a single type of data (e.g., text).
+  - **Multimodal**: Works with multiple types of data, such as text, images, or videos.
+  
+#### Use Cases
+- **Text Classification**: Classifying text into categories.
+- **Text Generation**: Creating new text based on input.
+- **Translation**: Converting text from one language to another.
+- **Code Generation**: Automatically generating code from natural language descriptions or other inputs.
+
+### Foundation Models
+- **Definition**: Large, pre-trained models that serve as the base for fine-tuning specific tasks. These models have learned patterns from massive datasets and can be customized for various applications like NLP, image recognition, and more.
+
+--- 
+
 ## The Machine Learning (ML) Pipeline
 
 The ML Pipeline is a systematic process used to build, train, and deploy machine learning models. It ensures that each stage, from identifying business goals to monitoring deployed models, is properly managed and optimized for performance. The typical steps in the pipeline are as follows:
