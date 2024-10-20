@@ -14,17 +14,22 @@
 ### Machine Learning (ML)
 - **Definition**: A subset of AI that enables systems to learn from data and make predictions or decisions without explicit programming or rules.
 - **Key Concept**: AI that operates through data patterns and training, rather than explicitly coded instructions.
-- **Examples**: **Linear Regression**, **Decision Trees**, **Support Vector Machines**—all supervised learning algorithms used for prediction tasks.
+- **Examples**: **Linear Regression**, **Decision Trees**, **Support Vector Machines**—supervised learning algorithms used for predictive tasks.
 
 ### Deep Learning
 - **Definition**: A subset of machine learning that uses neural networks with multiple layers (hence "deep") to model complex patterns in data.
-- **Key Concept**: A powerful technique for tasks like image recognition, natural language processing, and autonomous systems, often leveraging large datasets.
-- **Examples**: **Convolutional Neural Networks (CNNs)** for image processing, **Recurrent Neural Networks (RNNs)** for time-series data or language models.
+- **Key Concept**: Effective for tasks like image recognition, natural language processing, and autonomous systems.
+- **Examples**: **Convolutional Neural Networks (CNNs)** for image processing, **Recurrent Neural Networks (RNNs)** for sequential data like time-series or language models.
 
 ### Generative AI
-- **Definition**: A subset of deep learning that creates new solutions based on learned data, typically using foundation models.
-- **Key Concept**: AI systems that generate novel outputs, such as images, text, or music, from learned data patterns.
-- **Examples**: **ChatGPT** for text generation, **DALL·E** for image generation, **DeepDream** for generating artistic visuals.
+- **Definition**: A subset of deep learning focused on creating new content (such as text, images, or music) from learned data. Generative AI models are generally based on **foundation models**, which are large, pre-trained models that can be adapted to a wide range of tasks.
+- **Key Concept**: AI systems that generate novel outputs based on patterns learned during training. Foundation models provide the versatility needed for fine-tuning on specific tasks.
+- **Examples**: **ChatGPT** for text generation, **DALL·E** for image generation, **DeepDream** for artistic visual generation.
+
+### Large Language Models (LLMs)
+- **Definition**: A type of **Generative AI** focused on understanding and generating human-like text. LLMs are trained on vast amounts of text data to learn language patterns, grammar, and context.
+- **Key Concept**: LLMs generate coherent and high-quality text based on input prompts and are capable of performing tasks like summarization, translation, and question answering.
+- **Examples**: **GPT-4**, **BERT**, **T5**, **Claude 2**—used for tasks like text generation, sentiment analysis, summarization, and natural language understanding.
 
 ---
 
@@ -58,7 +63,7 @@
 
 ---
 
-### Vector Database
+### Vector Databases
 - **Definition**: A type of database designed for storing and querying vectors (embeddings), which is useful for tasks like semantic search.
 
 #### Vector Database Options on AWS
@@ -67,24 +72,6 @@
 - **Amazon Neptune ML**: Uses Graph Neural Networks (GNNs) to make predictions based on graph data, supporting vectorized data in graph databases.
 - **Amazon MemoryDB**: Supports high-speed vector storage and retrieval with millisecond query times and tens of thousands of queries per second (QPS).
 - **Amazon DocumentDB**: Supports vector search with MongoDB compatibility, enabling storage, indexing, and search of millions of vectors with millisecond response times.
-
----
-
-### Large Language Models (LLMs)
-- **Definition**: Advanced AI models trained on vast amounts of data to perform a variety of language-related tasks.
-- **Types**:
-  - **Unimodal**: Works with a single type of data (e.g., text).
-  - **Multimodal**: Works with multiple types of data, such as text, images, or videos.
-- **Reinforcement Learning from Human Feedback (RLHF)**: Improves model performance by incorporating human feedback to guide and refine its responses.
-  
-#### Use Cases
-- **Text Classification**: Classifying text into categories.
-- **Text Generation**: Creating new text based on input.
-- **Translation**: Converting text from one language to another.
-- **Code Generation**: Automatically generating code from natural language descriptions or other inputs.
-
-### Foundation Models
-- **Definition**: Large, pre-trained models that serve as the base for fine-tuning specific tasks. These models have learned patterns from massive datasets and can be customized for various applications like NLP, image recognition, and more.
 
 --- 
 
