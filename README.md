@@ -61,6 +61,7 @@
 - **Types**:
   - **Unimodal**: Works with a single type of data (e.g., text).
   - **Multimodal**: Works with multiple types of data, such as text, images, or videos.
+- **Reinforcement Learning from Human Feedback (RLHF)**: Improves model performance by incorporating human feedback to guide and refine its responses.
   
 #### Use Cases
 - **Text Classification**: Classifying text into categories.
