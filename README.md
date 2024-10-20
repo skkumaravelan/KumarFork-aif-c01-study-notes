@@ -4,6 +4,133 @@
 - [Official Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-ai-practitioner/AWS-Certified-AI-Practitioner_Exam-Guide.pdf)
 - [Official Exam Prep - Amazon Skill Builder](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/19554/exam-prep-standard-course-aws-certified-ai-practitioner-aif-c01)
 
+## The Machine Learning (ML) Pipeline
+
+The ML Pipeline is a systematic process used to build, train, and deploy machine learning models. It ensures that each stage, from identifying business goals to monitoring deployed models, is properly managed and optimized for performance. The typical steps in the pipeline are as follows:
+
+**Steps:**
+1. Identify Business Goal
+2. Frame ML Problem
+3. Collect Data
+4. Pre-Process Data
+5. Engineer Features
+6. Train, Tune, Evaluate
+7. Deploy
+8. Monitor
+
+---
+
+### 1. Identify Business Goal
+- **Description**: Define success criteria and align stakeholders to ensure the ML project meets business objectives.
+- **Key Activities**:
+  - Establish clear success metrics.
+  - Align with stakeholders across the organization.
+
+### 2. Frame the ML Problem
+- **Description**: Define the ML problem, inputs, outputs, and metrics while considering feasibility and cost/benefit analysis.
+- **Key Activities**:
+  - Identify inputs, outputs, and performance metrics.
+  - Start with simple model options (e.g., linear regression).
+  - Perform cost-benefit analysis to evaluate feasibility.
+  
+- **Model Options**:
+  - **AI/ML Hosted Service** (e.g., AWS Comprehend, Forecast, Personalize): No training required.
+  - **Pre-trained Models** (e.g., Amazon Bedrock, SageMaker JumpStart): Fine-tune with your data.
+  - **Fully Custom Model**: Build and train from scratch.
+
+### 3. Collect Data
+- **Description**: Collect and prepare the necessary data for training the model.
+- **Key Activities**:
+  - Identify data sources (e.g., databases, data lakes).
+  - Ingest and label data.
+  
+- **Tools**:
+  - **AWS Glue**: For ETL (Extract, Transform, Load) processes.
+  - **SageMaker Ground Truth**: Human labeling of ambiguous data.
+
+### 4. Pre-Process Data
+- **Description**: Clean and prepare the data, ensuring it is suitable for training.
+- **Key Activities**:
+  - Perform exploratory data analysis (EDA).
+  - Clean the data, removing duplicates, filling missing values, and anonymizing PII.
+  - Split data into training (80%), validation (10%), and test (10%) sets.
+
+- **Tools**:
+  - **AWS Glue**: ETL service with built-in transformations.
+  - **SageMaker Canvas**: Data import, preparation, and visualization.
+  - **AWS Glue DataBrew**: Visual data preparation with quality rules.
+
+### 5. Engineer Features
+- **Description**: Select and engineer features that will enhance model performance.
+- **Key Activities**:
+  - Feature selection and creation based on domain knowledge.
+  
+- **Tools**:
+  - **SageMaker Feature Store**: Store and manage features as a single source of truth.
+
+### 6. Train, Tune, and Evaluate the Model
+- **Description**: Train the model, tune hyperparameters, and evaluate performance.
+- **Key Activities**:
+  - Train the model iteratively and fine-tune parameters.
+  - Tune hyperparameters (e.g., epoch, batch size, learning rate) and run experiments.
+  - Evaluate the model using metrics and compare performance.
+
+- **Parameters**:
+  - **Inference Parameters** (supported by Amazon Bedrock):
+    - **Randomness and Diversity**: Temperature, Top K, Top P.
+    - **Length**: Response length, penalties, stop sequences.
+  - **Model Training Parameters** (Hyperparameters):
+    - **Epoch**: The number of iterations through the entire dataset.
+    - **Batch Size**: Number of samples before updating model parameters.
+    - **Learning Rate**: Controls how fast the model learns.
+
+- **Tools**:
+  - **SageMaker Training Jobs**: Manage training processes, specify training data, hyperparameters, and compute resources.
+  - **SageMaker Experiments**: Track model runs and hyperparameter tuning.
+  - **Automatic Model Tuning (AMT)**: Automatically tune hyperparameters using the specified metric.
+
+### 7. Deploy the Model
+- **Description**: Deploy the trained model to make predictions.
+- **Key Activities**:
+  - Choose between batch or real-time inference.
+  - Select a hosting option (e.g., AWS Batch, ECS, EKS, Lambda, EC2).
+  
+- **Tools**:
+  - **AWS API Gateway**: Expose model as an API endpoint for integration with applications.
+
+### 8. Monitor the Model
+- **Description**: Continuously monitor the model's performance and detect any data or concept drift.
+- **Key Activities**:
+  - Monitor model in real-time for data and concept drift.
+  - Set alerts and automate corrective actions if performance degrades.
+
+- **Types of Drift**:
+  - **Data Drift**: When the input data changes from what the model was trained on.
+  - **Concept Drift**: When the relationship between inputs and outputs shifts.
+
+- **Tools**:
+  - **SageMaker Model Monitor**: Schedule and monitor data drift, send results to CloudWatch, and automate corrective measures.
+
+---
+
+## MLOps and Automation
+
+- **Description**: MLOps applies DevOps principles to machine learning, ensuring rapid experimentation, version control, continuous integration, and active performance monitoring.
+  
+- **Key Activities**:
+  - Infrastructure as Code (IaC) for automating pipeline setup.
+  - Rapid experimentation and versioning of models and pipelines.
+  - Active performance monitoring for continuous model optimization.
+
+- **Tools**:
+  - **SageMaker Pipelines**: Automate end-to-end ML workflows.
+  - **AWS CodeCommit**: Version control for models and code.
+  - **SageMaker Model Building Pipelines**: Manage data processing, model training, and deployment.
+  - **AWS Step Functions**: Orchestrate complex workflows.
+  - **Amazon Managed Workflows for Apache Airflow (MWAA)**: For managing and orchestrating large-scale workflows.
+
+---
+
 ## Services 
 
 ### AWS Managed AI Services
