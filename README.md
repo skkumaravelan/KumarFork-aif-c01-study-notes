@@ -183,13 +183,13 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
   - **Bias and Fairness**: Lack of diversity in training data leading to biased predictions.
     - Solution: Ensure diverse and representative training data; include fairness constraints.
 
-- **Fine-Tuning**:
-  - Adjust the weights of a pre-trained model with your specific and _labelled_ data to adapt it for new tasks.
+- **Fine-Tuning** (BedRock and SageMaker):
+  - Adjust the weights of a pre-trained model with your specific and _labelled_ data to adapt it for new tasks. 
   - Be aware that if you only provide instructions for a single task, the model may lose its more general purpose capability and experience _catastrophic forgetting_.
-  - **Domain adaptation fine-tuning**: Tailors a pre-trained foundation model to a specific domain (e.g., legal, medical) using a small amount of domain-specific data. This helps the model perform better on tasks related to that particular domain.
-  - **Instruction-based fine-tuning**: Involves providing labeled examples of specific tasks (e.g., summarization, classification) to improve a model’s performance on that particular task. This type of fine-tuning is useful for making the model better at tasks where precise outputs are needed.
+  - **Domain adaptation fine-tuning** (SageMaker): Tailors a pre-trained foundation model to a specific domain (e.g., legal, medical) using a small amount of domain-specific data. This helps the model perform better on tasks related to that particular domain.
+  - **Instruction-based fine-tuning** (SageMaker): Involves providing labeled examples of specific tasks (e.g., summarization, classification) to improve a model’s performance on that particular task. This type of fine-tuning is useful for making the model better at tasks where precise outputs are needed.
  
-- **Continued-Pretraining**:
+- **Continued-Pretraining** (BedRock):
   - Using _unlabeled_ data to expand the model's overall knowledge without narrowing its scope to a specific task.
      
 - **Tools**:
