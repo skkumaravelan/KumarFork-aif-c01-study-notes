@@ -4,6 +4,61 @@
 - [Official Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-ai-practitioner/AWS-Certified-AI-Practitioner_Exam-Guide.pdf)
 - [Official Exam Prep - Amazon Skill Builder](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/19554/exam-prep-standard-course-aws-certified-ai-practitioner-aif-c01)
 
+## Services 
+
+### AWS Managed AI Services
+
+AWS offers a range of managed AI services designed to be easily integrated into applications, providing powerful AI capabilities without the need for deep machine learning expertise. Here's an overview of key services:
+
+#### Computer Vision
+- **AWS Rekognition**
+  - Facial comparison and analysis, object and text detection, content moderation. Good for _screening content_ such as identifying violent or inappropriate material.
+
+#### Text and Document Analysis
+- **AWS Textract** (OCR)
+  - Converts scanned images to text, enabling digital content management.
+- **Amazon Comprehend** (NLP)
+  - Extracts key phrases, entities, and sentiment from text. Useful for analyzing _sentiment of feedback_ and detecting _PII data_.
+
+#### Language AI
+- **Amazon Lex**
+  - Builds conversational interfaces for both voice and text, ideal for creating _chatbots_.
+- **Amazon Transcribe**
+  - Speech to text service, perfect for creating _captions for audio_.
+- **Amazon Polly**
+  - Converts text into lifelike speech, enhancing user engagement through voice.
+
+#### Customer Experience
+- **Amazon Kendra**
+  - Provides intelligent document search capabilities.
+- **Amazon Personalize**
+  - Offers personalized product recommendations, akin to "you may also like" features.
+- **Amazon Translate**
+  - Facilitates language translation, supporting global user interaction.
+
+#### Business Metrics
+- **Amazon Forecast**
+  - Predicts future points in time-series data, such as _inventory levels_.
+- **Amazon Fraud Detection**
+  - Detects potential fraud in various scenarios including online transactions and new account creations.
+
+### Amazon SageMaker
+
+Amazon SageMaker is an integrated machine learning service that enables developers and data scientists to build, train, and deploy machine learning models at scale. Users can create custom models from scratch or use and fine-tune existing ones through SageMaker JumpStart. This platform offers more control than high-level AI services like AWS Rekognition, allowing for detailed customization and optimization to meet specific project requirements.
+
+#### Features
+- **SageMaker Feature Store**: Central repository for storing, retrieving, and sharing machine learning features.
+- **SageMaker Model Registry**: Manages different versions of models and their metadata.
+- **SageMaker Pipelines**: Provides a workflow orchestration service for building, training, and deploying models with repeatable workflows.
+- **SageMaker Model Monitor**: Utilizes built-in rules to _detect data drift_ or create custom rules, monitoring results can be sent to _CloudWatch_, and automates corrective measures.
+- **SageMaker Ground Truth**: Leverages actual humans for labeling data, ensuring high-quality training datasets.
+- **SageMaker Canvas**: A visual, no-code tool that allows users to build models based on their data with less technical expertise.
+- **SageMaker JumpStart**: Access to _PreTrained Models_ and a hub for easily deploying machine learning solutions.
+- **SageMaker Clarify**: Tools to help _detect biases_ and explain predictions to increase transparency.
+- **SageMaker Role Manager**: Manages permissions for SageMaker resources and services.
+- **SageMaker Model Cards**: Create transparent documentation for trained models.
+- **SageMaker ML Lineage Tracking**: Tracks the lineage of ML models to _establish model governance_, _reproduce workflows_, and maintain work history.
+- **SageMaker Model Dashboard**: Provides a unified interface to manage and monitor all model-related activities.
 
 ## Tables
 
