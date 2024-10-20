@@ -49,7 +49,7 @@
 
 #### Vector Database Options on AWS
 - **Amazon OpenSearch Service**: Supports k-nearest neighbor (k-NN) search for vector databases. Useful for log analytics, real-time application monitoring, and search.
-- **Amazon Aurora PostgreSQL-Compatible Edition & Amazon RDS for PostgreSQL**: Supports the pgvector extension, enabling efficient storage of embeddings and similarity searches.
+- **Amazon Aurora PostgreSQL-Compatible Edition & Amazon RDS for PostgreSQL**: Supports the __pgvector__ extension, enabling efficient storage of embeddings and similarity searches.
 - **Amazon Neptune ML**: Uses Graph Neural Networks (GNNs) to make predictions based on graph data, supporting vectorized data in graph databases.
 - **Amazon MemoryDB**: Supports high-speed vector storage and retrieval with millisecond query times and tens of thousands of queries per second (QPS).
 - **Amazon DocumentDB**: Supports vector search with MongoDB compatibility, enabling storage, indexing, and search of millions of vectors with millisecond response times.
@@ -138,7 +138,7 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
   - **SageMaker Feature Store**: Store and manage features as a single source of truth.
 
 ### 6. Train, Tune, and Evaluate the Model
-- **Description**: Train the model, tune hyperparameters, and evaluate performance.
+- **Description**: Train the model, tune it, and evaluate performance.
 - **Key Activities**:
   - Train the model iteratively and fine-tune parameters.
   - Tune hyperparameters (e.g., epoch, batch size, learning rate) and run experiments.
@@ -161,6 +161,15 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
   - **Bias and Fairness**: Lack of diversity in training data leading to biased predictions.
     - Solution: Ensure diverse and representative training data; include fairness constraints.
 
+- **Fine-Tuning**:
+  - Adjust the weights of a pre-trained model with your specific and __labelled__ data to adapt it for new tasks.
+  - Be aware that if you only provide instructions for a single task, the model may lose its more general purpose capability and experience __catastrophic forgetting__.
+  - **Domain adaptation fine-tuning**: Tailors a pre-trained foundation model to a specific domain (e.g., legal, medical) using a small amount of domain-specific data. This helps the model perform better on tasks related to that particular domain.
+  - **Instruction-based fine-tuning**: Involves providing labeled examples of specific tasks (e.g., summarization, classification) to improve a model’s performance on that particular task. This type of fine-tuning is useful for making the model better at tasks where precise outputs are needed.
+ 
+- **Continued-Pretraining**:
+  - Using __unlabeled__ data to expand the model's overall knowledge without narrowing its scope to a specific task.
+     
 - **Tools**:
   - **SageMaker Training Jobs**: Manage training processes, specify training data, hyperparameters, and compute resources.
   - **SageMaker Experiments**: Track model runs and hyperparameter tuning.
