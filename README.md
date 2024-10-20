@@ -42,6 +42,8 @@ AWS offers a range of managed AI services designed to be easily integrated into 
 - **Amazon Fraud Detection**
   - Detects potential fraud in various scenarios including online transactions and new account creations.
 
+---
+
 ### Amazon SageMaker
 
 Amazon SageMaker is an integrated machine learning service that enables developers and data scientists to build, train, and deploy machine learning models at scale. Users can create custom models from scratch or use and fine-tune existing ones through SageMaker JumpStart. This platform offers more control than high-level AI services like AWS Rekognition, allowing for detailed customization and optimization to meet specific project requirements.
