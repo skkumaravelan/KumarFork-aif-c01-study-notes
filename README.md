@@ -61,6 +61,7 @@ Amazon SageMaker is an integrated machine learning service that enables develope
 - **SageMaker Model Cards**: Create transparent documentation for trained models.
 - **SageMaker ML Lineage Tracking**: Tracks the lineage of ML models to _establish model governance_, _reproduce workflows_, and maintain work history.
 - **SageMaker Model Dashboard**: Provides a unified interface to manage and monitor all model-related activities.
+- **SageMaker Data Wrangler**: Simplifies the process of data preparation for machine learning, enabling quick and easy data cleaning, transformation, and visualization.
 
 ## Tables
 
