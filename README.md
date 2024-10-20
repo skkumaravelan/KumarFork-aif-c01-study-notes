@@ -235,10 +235,6 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
 
 ---
 
-Here’s the updated version of your **Machine Learning Pipeline** supplementary sections, now including references to **Amazon Inspector**, **AWS Audit Manager**, and **AWS Artifact** where applicable:
-
----
-
 ### MLOps and Automation
 - **Description**: Apply DevOps principles to manage machine learning models throughout their lifecycle, focusing on automation, version control, and monitoring.
 - **Key Activities**:
