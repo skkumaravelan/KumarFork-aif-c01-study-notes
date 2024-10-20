@@ -152,6 +152,14 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
     - **Epoch**: The number of iterations through the entire dataset.
     - **Batch Size**: Number of samples before updating model parameters.
     - **Learning Rate**: Controls how fast the model learns.
+   
+- **Model Training Issues**:
+  - **Overfitting**: Too much training on the same data, causing the model to be overly specific.
+    - Solution: Use more diverse data during training.
+  - **Underfitting**: The model doesn’t learn enough patterns from the data.
+    - Solution: Train the model for more epochs or with more data.
+  - **Bias and Fairness**: Lack of diversity in training data leading to biased predictions.
+    - Solution: Ensure diverse and representative training data; include fairness constraints.
 
 - **Tools**:
   - **SageMaker Training Jobs**: Manage training processes, specify training data, hyperparameters, and compute resources.
