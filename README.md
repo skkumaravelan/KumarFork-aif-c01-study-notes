@@ -347,10 +347,6 @@ Amazon Bedrock is a fully managed, serverless service that provides access to hi
 - **Pay-as-you-go**: Amazon Bedrock charges based on the number of **input and output tokens** used during inference. This means you only pay for the tokens processed when using the foundation models.
 - **Fine-tuned models**: If you are using a **custom or fine-tuned model**, additional charges apply for **Provisioned Throughput**, which guarantees consistent performance and reserved capacity for inference.
 
----
-
-This short overview highlights the key points about Bedrock pricing, including both **pay-as-you-go** for standard usage and additional costs for **fine-tuned models** with **Provisioned Throughput**.
-
 #### Features
 - **Model Choice**  
   - Access a variety of foundation models from AI21 Labs, Anthropic, Cohere, Meta, Mistral AI, Stability AI, and Amazon, allowing for optimal model selection based on specific application needs.
