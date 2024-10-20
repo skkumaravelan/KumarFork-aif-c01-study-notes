@@ -54,19 +54,32 @@ AWS offers a range of managed AI services designed to be easily integrated into 
 Amazon SageMaker is an integrated machine learning service that enables developers and data scientists to build, train, and deploy machine learning models at scale. Users can create custom models from scratch or use and fine-tune existing ones through SageMaker JumpStart. This platform offers more control than high-level AI services like AWS Rekognition, allowing for detailed customization and optimization to meet specific project requirements.
 
 #### Features
-- **SageMaker Feature Store**: Central repository for storing, retrieving, and sharing machine learning features.
-- **SageMaker Model Registry**: Manages different versions of models and their metadata.
-- **SageMaker Pipelines**: Provides a workflow orchestration service for building, training, and deploying models with repeatable workflows.
-- **SageMaker Model Monitor**: Utilizes built-in rules to _detect data drift_ or create custom rules, monitoring results can be sent to _CloudWatch_, and automates corrective measures.
-- **SageMaker Ground Truth**: Leverages actual humans for labeling data, ensuring high-quality training datasets.
-- **SageMaker Canvas**: A visual, no-code tool that allows users to build models based on their data with less technical expertise.
-- **SageMaker JumpStart**: Access to _PreTrained Models_ and a hub for easily deploying machine learning solutions.
-- **SageMaker Clarify**: Tools to help _detect biases_ and explain predictions to increase transparency.
-- **SageMaker Role Manager**: Manages permissions for SageMaker resources and services.
-- **SageMaker Model Cards**: Create transparent documentation for trained models.
-- **SageMaker ML Lineage Tracking**: Tracks the lineage of ML models to _establish model governance_, _reproduce workflows_, and maintain work history.
-- **SageMaker Model Dashboard**: Provides a unified interface to manage and monitor all model-related activities.
-- **SageMaker Data Wrangler**: Simplifies the process of data preparation for machine learning, enabling quick and easy data cleaning, transformation, and visualization.
+- **SageMaker Feature Store**  
+  - Central repository for storing, retrieving, and sharing machine learning features.
+- **SageMaker Model Registry**  
+  - Manages different versions of models and their metadata.
+- **SageMaker Pipelines**  
+  - Provides a workflow orchestration service for building, training, and deploying models with repeatable workflows.
+- **SageMaker Model Monitor**  
+  - Utilizes built-in rules to detect data drift or create custom rules, monitoring results can be sent to CloudWatch, and automates corrective measures.
+- **SageMaker Ground Truth**  
+  - Leverages actual humans for labeling data, ensuring high-quality training datasets.
+- **SageMaker Canvas**  
+  - A visual, no-code tool that allows users to build models based on their data with less technical expertise.
+- **SageMaker JumpStart**  
+  - Access to PreTrained Models and a hub for easily deploying machine learning solutions.
+- **SageMaker Clarify**  
+  - Tools to help detect biases and explain predictions to increase transparency.
+- **SageMaker Role Manager**  
+  - Manages permissions for SageMaker resources and services.
+- **SageMaker Model Cards**  
+  - Create transparent documentation for trained models.
+- **SageMaker ML Lineage Tracking**  
+  - Tracks the lineage of ML models to establish model governance, reproduce workflows, and maintain work history.
+- **SageMaker Model Dashboard**  
+  - Provides a unified interface to manage and monitor all model-related activities.
+- **SageMaker Data Wrangler**  
+  - Simplifies the process of data preparation for machine learning, enabling quick and easy data cleaning, transformation, and visualization.
 
 ---
 
