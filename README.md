@@ -99,8 +99,7 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
 ### 2. Frame the ML Problem
 - **Description**: Define the ML problem, inputs, outputs, and metrics while considering feasibility and cost/benefit analysis.
 - **Key Activities**:
-  - Identify inputs, outputs, and performance metrics.
-  - Start with simple model options (e.g., linear regression).
+  - Identify inputs, outputs, requirements, and performance metrics.
   - Perform cost-benefit analysis to evaluate feasibility.
   
 - **Model Options**:
@@ -357,7 +356,7 @@ AWS Glue is a fully managed, cloud-optimized ETL (Extract, Transform, Load) serv
 #### AWS Macie
 - Helps you discover and protect sensitive data like PII (Personally Identifiable Information) using machine learning.
 
-#### AWS PrivateLink
+#### AWS PrivateLink (VPC interface endpoints)
 - Provides secure, private connectivity between VPCs, AWS services, and on-premises applications without exposing traffic to the public internet.
 
 #### AWS Lake Formation
