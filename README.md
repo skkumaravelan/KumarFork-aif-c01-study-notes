@@ -288,6 +288,8 @@ The typical SageMaker training process includes several key elements that help c
   - Simplifies the process of data preparation for machine learning, enabling quick and easy data cleaning, transformation, and visualization.
 - **SageMaker Experiments (Now called MLflow with Amazon SageMaker)**
   - Tracks, organizes, views, analyzes, and compares iterative ML experimentation.
+- **Amazon Augmented AI (A2I)**
+  - Allows you to add human review for low-confidence predictions or random samples, ensuring more accurate results.
 
 ---
 
