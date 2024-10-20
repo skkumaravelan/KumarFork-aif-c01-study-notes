@@ -180,15 +180,16 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
 - **Key Activities**:
   - Select a hosting option (e.g., AWS Batch, ECS, EKS, Lambda, EC2).
   - If using a custom or fine-tuned model with AWS Bedrock, you need to purchase Provisioned Throughput to use the model for inference.
-  - SageMaker Deployment Options:
-    - **Real-Time Inference**: For low-latency, sustained traffic predictions with auto-scaling capabilities.
-    - **Batch Transform**: For processing large batches of data asynchronously.
-    - **Asynchronous Inference**: For long-running inference requests with large payloads, handled without immediate responses.
-    - **Serverless Inference**: For intermittent traffic, where the model scales automatically without infrastructure management.
-  - Bedrock Deployment Mechanisms:
-    - **On-Demand Inference**: Pay-per-use inference based on the number of input/output tokens. Ideal for low or sporadic usage.
-    - **Provisioned Throughput**: Required for custom or fine-tuned models, providing guaranteed capacity for consistent, high-throughput inference.
-    - **BedRock Agent**s: Deploy agents for multi-step workflows, integrating models with tools like Amazon Kendra and AWS Lambda to handle complex tasks.
+    
+- SageMaker Deployment Options:
+  - **Real-Time Inference**: For low-latency, sustained traffic predictions with auto-scaling capabilities.
+  - **Batch Transform**: For processing large batches of data asynchronously.
+  - **Asynchronous Inference**: For long-running inference requests with large payloads, handled without immediate responses.
+  - **Serverless Inference**: For intermittent traffic, where the model scales automatically without infrastructure management.
+- Bedrock Deployment Mechanisms:
+  - **On-Demand Inference**: Pay-per-use inference based on the number of input/output tokens. Ideal for low or sporadic usage.
+  - **Provisioned Throughput**: Required for custom or fine-tuned models, providing guaranteed capacity for consistent, high-throughput inference.
+  - **BedRock Agent**s: Deploy agents for multi-step workflows, integrating models with tools like Amazon Kendra and AWS Lambda to handle complex tasks.
   
 - **Tools**:
   - **AWS API Gateway**: Expose model as an API endpoint for integration with applications.
