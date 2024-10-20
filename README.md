@@ -109,26 +109,40 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
   - **Fully Custom Model**: Build and train from scratch.
 
 ### 3. Collect Data
+
 - **Description**: Collect and prepare the necessary data for training the model.
+
 - **Key Activities**:
-  - Identify data sources (e.g., databases, data lakes).
+  - Identify data sources (e.g., databases, data lakes, external APIs).
   - Ingest and label data.
-  
+
+- **Where Data is Stored**:  
+  - Data collected for machine learning is typically stored in **Amazon S3**. This applies to both data sourced from internal systems and third-party datasets accessed via **AWS Data Exchange**.
+
 - **Tools**:
-  - **AWS Glue**: For ETL (Extract, Transform, Load) processes.
-  - **SageMaker Ground Truth**: Human labeling of ambiguous data.
+  - **AWS Glue**: For **ETL (Extract, Transform, Load)** processes, moving and transforming data into a usable format before storage in **Amazon S3**.
+  - **SageMaker Ground Truth**: For human labeling of ambiguous data, with labeled data stored in **Amazon S3**.
+  - **AWS Data Exchange**: Allows secure access to third-party datasets. These datasets can be used as additional sources of training data, and the ingested data is stored in **Amazon S3**.
 
 ### 4. Pre-Process Data
+
 - **Description**: Clean and prepare the data, ensuring it is suitable for training.
+
 - **Key Activities**:
-  - Perform exploratory data analysis (EDA).
-  - Clean the data, removing duplicates, filling missing values, and anonymizing PII.
-  - Split data into training (80%), validation (10%), and test (10%) sets.
+  - Perform **Exploratory Data Analysis (EDA)**.
+  - Clean the data, removing duplicates, filling missing values, and anonymizing **PII**.
+  - Split data is often split into ratios of **training (80%)**, **validation (10%)**, and **test (10%)** sets.
+
+- **How to Clean Data**:
+  - **AWS Glue Transformations**: Glue has built-in transformations for tasks like removing duplicates or filling missing values, and allows custom transformations using Python or Spark.
+  - **Macie for PII**: AWS Macie detects and anonymizes **PII** data, working with **Amazon S3** to scan and mask sensitive information.
+  - **AWS Glue DataBrew**: Enables data preparation and cleaning through a visual interface. You can apply **data quality rules**, such as filling missing values, and save these transformations as **recipes** for reuse.
+  - **SageMaker Canvas**: Facilitates data import, transformation, and visualization without requiring deep technical knowledge. It uses built-in transformations that are added step-by-step to prepare data for training, and each step can be visually tracked in the flow.
 
 - **Tools**:
-  - **AWS Glue**: ETL service with built-in transformations.
-  - **SageMaker Canvas**: Data import, preparation, and visualization.
-  - **AWS Glue DataBrew**: Visual data preparation with quality rules.
+  - **AWS Glue**: An ETL service with built-in transformations for data cleaning.
+  - **AWS Glue DataBrew**: A visual data preparation tool where you can define and apply transformation rules (called **recipes**), with built-in data quality checks.
+  - **SageMaker Canvas**: A tool for importing, preparing, and transforming data with a visual, no-code interface. Each transformation step is part of a clear workflow, making data preparation more accessible.
 
 ### 5. Engineer Features
 - **Description**: Select and engineer features that will enhance model performance.
