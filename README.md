@@ -177,9 +177,6 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
 
 ### 7. Deploy the Model
 - **Description**: Deploy the trained model to make predictions.
-- **Key Activities**:
-  - Select a hosting option (e.g., AWS Batch, ECS, EKS, Lambda, EC2).
-  - If using a custom or fine-tuned model with AWS Bedrock, you need to purchase Provisioned Throughput to use the model for inference.
     
 - SageMaker Deployment Options:
   - **Real-Time Inference**: For low-latency, sustained traffic predictions with auto-scaling capabilities.
