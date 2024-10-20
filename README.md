@@ -180,6 +180,7 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
 - **Key Activities**:
   - Choose between batch or real-time inference.
   - Select a hosting option (e.g., AWS Batch, ECS, EKS, Lambda, EC2).
+  - If using a custom or fine-tuned model with AWS Bedrock, you need to purchase Provisioned Throughput to use the model for inference.
   
 - **Tools**:
   - **AWS API Gateway**: Expose model as an API endpoint for integration with applications.
