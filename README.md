@@ -5,8 +5,18 @@
 - [Official Exam Prep - Amazon Skill Builder](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/19554/exam-prep-standard-course-aws-certified-ai-practitioner-aif-c01)
 
 
+## Tables
 
-## Amazon SageMaker Inference Methods
+### Types of Diffusion Models
+
+| Diffusion Model Type | Description                                          | When to Use                                  | Examples                 |
+|----------------------|------------------------------------------------------|----------------------------------------------|--------------------------|
+| **Forward Diffusion**| Adds noise to data progressively.                    | Understanding data degradation processes.    | Experimental AI studies  |
+| **Reverse Diffusion**| Reconstructs original data from noise.               | Creating detailed images from distorted inputs. | Image restoration tools |
+| **Stable Diffusion** | Works in reduced latent space, not directly in pixels. | Generating detailed imagery with efficiency. | Midjourney, DALL-E       |
+
+
+### Amazon SageMaker Inference Methods
 
 | Inference Type     | Deployed To         | Characteristics                                                         |
 |--------------------|---------------------|-------------------------------------------------------------------------|
@@ -16,7 +26,7 @@
 | **Real-Time**      | EC2                 | Live predictions, sustained traffic, low latency, consistent performance|
 
 
-## Types of Training Data for Machine Learning/AI
+### Types of Training Data for Machine Learning/AI
 
 | Data Type       | AWS Data Source Example                | Actual Example                           |
 |-----------------|----------------------------------------|------------------------------------------|
@@ -26,7 +36,7 @@
 | **Time-Series** | Time-stamped data stored in S3         | IoT device data, stock market data       |
 
 
-## Confusion Matrix Evaluation Metrics
+### Confusion Matrix Evaluation Metrics
 
 | Metric Name              | Formula                                                        | Use Case                                                                                      |
 |--------------------------|----------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
