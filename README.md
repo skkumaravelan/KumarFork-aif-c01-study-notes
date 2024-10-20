@@ -15,6 +15,14 @@
 | **Reverse Diffusion**| Reconstructs original data from noise.               | Creating detailed images from distorted inputs. | Image restoration tools |
 | **Stable Diffusion** | Works in reduced latent space, not directly in pixels. | Generating detailed imagery with efficiency. | Midjourney, DALL-E       |
 
+### Generative AI Architectures
+
+| Generative AI Type          | Description                                                   | When to Use                                              | Examples                       |
+|-----------------------------|---------------------------------------------------------------|----------------------------------------------------------|--------------------------------|
+| **Generative Adversarial Network (GANs)** | Two-part model with generator and discriminator networks.     | Creating realistic images, videos, and voice synthesis.  | StyleGAN for photorealistic portraits |
+| **Variational Autoencoders (VAEs)**       | Uses probability distributions to encode and decode data.      | Generating new data points with similar statistical properties. | Drug discovery, anomaly detection |
+| **Transformers**                         | Leverages attention mechanisms to weigh the influence of different parts of the input data. | Natural language processing, image generation at scale.  | GPT-3 for text, DALL-E for images   |
+
 
 ### Amazon SageMaker Inference Methods
 
