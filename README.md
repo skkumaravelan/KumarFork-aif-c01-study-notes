@@ -104,6 +104,8 @@ Here's the updated section for Amazon Bedrock features, formatted as per your re
   - Eliminates the need for infrastructure management, simplifying the deployment and scaling of AI capabilities.
 - **Security and Privacy Guardrails**  
   - Features robust controls to restrict AI outputs, preventing the generation of inappropriate content and restricting sensitive advice like financial recommendations, ensuring ethical and compliant AI usage.
+- **PartyRock**
+  - A hands-on AI app-building playground powered by Amazon Bedrock, where users can quickly build generative AI apps and experiment with models without writing code.
 
 ---
 
