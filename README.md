@@ -180,6 +180,16 @@ AWS offers a range of managed AI services designed to be easily integrated into 
 
 Amazon SageMaker is an integrated machine learning service that enables developers and data scientists to build, train, and deploy machine learning models at scale. Users can create custom models from scratch or use and fine-tune existing ones through SageMaker JumpStart. This platform offers more control than high-level AI services like AWS Rekognition, allowing for detailed customization and optimization to meet specific project requirements.
 
+####  Training Process
+
+The typical SageMaker training process includes several key elements that help configure and manage the training jobs:
+
+- **Training Data Locations**: Data is typically stored in Amazon S3 and accessed via S3 URLs.
+- **ML Compute Instances**: SageMaker leverages EC2 instances (ECR instances) for scalable compute power.
+- **Training Images**: The training process is run using Docker container images specifically designed for machine learning.
+- **Hyperparameters**: Parameters that guide the learning process (e.g., learning rate, batch size).
+- **S3 Output Bucket**: The trained model artifacts are stored in an S3 bucket for later use.
+
 #### Features
 - **SageMaker Feature Store**  
   - Central repository for storing, retrieving, and sharing machine learning features.
@@ -207,6 +217,8 @@ Amazon SageMaker is an integrated machine learning service that enables develope
   - Provides a unified interface to manage and monitor all model-related activities.
 - **SageMaker Data Wrangler**  
   - Simplifies the process of data preparation for machine learning, enabling quick and easy data cleaning, transformation, and visualization.
+- **SageMaker Experiments (Now called MLflow with Amazon SageMaker)**
+  - Tracks, organizes, views, analyzes, and compares iterative ML experimentation.
 
 ---
 
