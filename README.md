@@ -195,3 +195,16 @@ AWS Glue is a fully managed, cloud-optimized ETL (Extract, Transform, Load) serv
 | **F1 Score**             | (2 * Precision * Recall) / (Precision + Recall)                 | Balancing precision and recall; useful in document classification where both metrics matter.  |
 | **False Positive Rate (FPR)** | False Positives / (True Negatives + False Positives)        | Minimizing incorrect positive predictions; e.g., in security alarms to reduce false alerts.   |
 | **Specificity (TNR)**    | True Negatives / (True Negatives + False Positives)             | Maximizing true negatives; e.g., in medical tests to correctly identify non-diseased patients.|
+
+
+### Generative AI performance metrics
+| Metric Name                                         | Explanation                                                             |
+|-----------------------------------------------------|-------------------------------------------------------------------------|
+| **Recall Oriented Understudy for Gisting Evaluation (ROUGE)** | Measures overlap between generated and reference text, good for summaries. |
+| **Bilingual Evaluation Understudy (BLEU)**           | Evaluates translation accuracy by comparing n-grams between outputs and references. |
+| **General Language Understanding Evaluation (GLUE)** | Assesses model performance on multiple natural language understanding tasks. |
+| **Holistic Evaluation of Language Models (HELM)**    | Provides broad, task-specific evaluation of language model capabilities.  |
+| **Massive Multitask Language Understanding (MMLU)**  | Tests model knowledge across a variety of domains and topics.            |
+| **Beyond the Imitation Game Benchmark (BIG-bench)**  | Evaluates models on creative and difficult AI tasks not covered by standard benchmarks. |
+| **Perplexity**                                       | Measures how well a model predicts the likelihood of the next token or word. |
+
