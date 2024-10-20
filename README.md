@@ -235,6 +235,9 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
 
 ---
 
+Here’s the updated version of your **Machine Learning Pipeline** supplementary sections, now including references to **Amazon Inspector**, **AWS Audit Manager**, and **AWS Artifact** where applicable:
+
+---
 
 ### MLOps and Automation
 - **Description**: Apply DevOps principles to manage machine learning models throughout their lifecycle, focusing on automation, version control, and monitoring.
@@ -260,7 +263,9 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
   - **SageMaker Model Cards**: Create documentation for trained models, including performance metrics and intended use.
   - **SageMaker ML Lineage Tracking**: Capture the entire workflow, tracking model lineage for reproducibility and governance.
   - **Glue DataBrew**: Simplify data governance with visual data preparation and quality rules.
-
+  - **AWS Audit Manager**: Automates the auditing of AWS services, ensuring continuous compliance and audit readiness for industry regulations.
+  - **AWS Artifact**: Provides on-demand access to compliance reports and agreements, helping organizations meet compliance requirements.
+  
 ---
 
 ### Cost and Performance Optimization
@@ -273,7 +278,8 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
   - **AWS Trusted Advisor**: Provides recommendations for cost and performance improvements.
   - **SageMaker Managed Spot Training**: Reduce training costs by utilizing spare AWS EC2 capacity.
   - **SageMaker Profiler**: Identify inefficient resource use during model training.
-  
+  - **Amazon Inspector**: Automates security assessments of ML applications, identifying vulnerabilities that can lead to performance degradation or security issues.
+
 ---
 
 ### Continual Learning and Retraining
@@ -290,25 +296,22 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
 
 ### Security
 - **Description**: Implement best security practices to safeguard machine learning models, data, and related infrastructure.
+  
 - **Key Activities**:
-  - **Least Privilege Principle**: Ensure that IAM roles and policies grant only the permissions required for a specific job or function.
+  - **Least Privilege Principle**: Ensure that IAM roles and policies grant only the permissions required for specific jobs or functions.
   - **PrivateLink and VPC Endpoints**: Lock down **SageMaker** to prevent exposure to the internet. Use **PrivateLink** and **VPC endpoints** to securely access resources within your private network.
   - **Encryption at Rest and in Transit**: By default, **SageMaker** encrypts data at rest and in transit using **KMS** (Key Management Service).
-  - **IAM Roles and Policies**: Create and manage IAM roles and policies that ensure secure access to model data and resources.
+  - **IAM Roles and Policies**: Create and manage IAM roles and policies to ensure secure access to model data and resources.
   - **S3 Block Public Access**: Prevent model data from being exposed by ensuring **S3 Block Public Access** settings override any potential public access.
   - **AWS IAM Identity Center**: Centralize identity management, allowing access to multiple AWS accounts, and integrate with Active Directory for identity management.
-
-- **Tools**:
+  
+#### Tools:
   - **AWS Config**: Continuously monitors and records configuration changes across AWS resources to ensure compliance and security.
   - **AWS CloudTrail**: Logs API calls and tracks user activity for auditing and compliance.
+  - **Amazon Inspector**: Automatically scans for vulnerabilities in machine learning environments to ensure that deployed models are secure.
+  - **AWS Audit Manager**: Automates auditing and ensures compliance with industry regulations by generating audit reports for validation.
+  - **AWS Artifact**: Provides access to compliance documents and security reports to ensure that your ML environments meet security and regulatory standards.
   - **SageMaker Role Manager**: Simplifies the management of permissions and roles for SageMaker resources and services.
-
----
-
-### Additional Tools for Data Governance and Automation:
-- **AWS Step Functions**: Orchestrate complex ML workflows, including triggering SageMaker jobs.
-- **SageMaker Clarify**: Ensure model transparency and fairness through bias detection and explainability.
-- **Amazon SageMaker Pipelines**: Automate and manage ML workflows for data processing, model training, and deployment.
 
 ---
 
@@ -455,84 +458,6 @@ AWS Glue is a fully managed, cloud-optimized ETL (Extract, Transform, Load) serv
   - Visual tool for data preparation, defining data quality rules, and saving transformations as "recipes."
 - **AWS Glue Data Quality**
   - Detects anomalies and recommends data quality rules for ensuring clean, high-quality data for AI models.
-
----
-
-## Additional AWS Services and Resources
-
-### Security and Compliance Tools
-
-#### Identity and Access Management (IAM)
-- Manages access to AWS services and resources securely. You can define who (identity) has what access (roles and permissions) to resources.
-
-#### AWS Macie
-- Helps you discover and protect sensitive data like PII (Personally Identifiable Information) using machine learning.
-
-#### AWS PrivateLink (VPC interface endpoints)
-- Provides secure, private connectivity between VPCs, AWS services, and on-premises applications without exposing traffic to the public internet.
-
-#### AWS Lake Formation
-- Simplifies the process of setting up data lakes, making it easier to securely store, catalog, and analyze large amounts of data.
-
-#### AWS Shared Responsibility Model
-- Defines the division of responsibilities between AWS and the customer in terms of security and compliance. AWS handles the security *of* the cloud, while customers are responsible for security *in* the cloud.
-
----
-
-### AWS Governance and Audit Services
-
-#### AWS Artifact
-- Provides on-demand access to security and compliance reports and select online agreements.
-
-#### Customer Compliance Center
-- Offers resources to help customers understand and meet their compliance requirements using AWS.
-
-#### AWS Audit Manager
-- Continuously audits AWS usage to assess compliance with industry standards and regulations.
-
----
-
-### AWS Monitoring and Security Services
-
-#### AWS CloudTrail
-- Captures API calls and related events to track user activity across AWS services.
-
-#### AWS Config
-- Continuously monitors and records AWS resource configurations and changes.
-  - **Conformance Packs**: Predefined rules to assess compliance with best practices. You can also configure auto-remediation for non-compliant resources.
-
-#### Amazon Inspector
-- Performs automated security assessments at the application level to identify vulnerabilities and deviations from best practices.
-
-#### AWS Trusted Advisor
-- Provides recommendations to help you:
-  - Reduce costs.
-  - Improve security.
-  - Increase performance.
-
----
-
-### Analytics 
-
-#### Amazon QuickSight
-- A scalable business intelligence (BI) tool for creating and sharing interactive dashboards and reports. Useful for visualizing and monitoring model performance.
-
-#### Amazon Redshift
-- A fully managed data warehouse service that enables fast querying of large datasets. It can be used for analyzing training data or running complex queries on model outputs.
-
----
-
-### Data
-
-#### Amazon S3
-- Used for storing model input (training data) and model output (trained models, results). It's scalable and reliable for handling large datasets.
-
-#### AWS Data Exchange
-- Allows access to third-party datasets for data input, enriching training data or enhancing model evaluation.
-
-#### Amazon EMR
-- Processes large datasets with tools like Hadoop and Spark. Used for data input transformation and pre-processing before model training.
-
 ---
 
 ## Tables
