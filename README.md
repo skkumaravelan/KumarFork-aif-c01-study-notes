@@ -84,6 +84,15 @@ Amazon Bedrock is a fully managed, serverless service that provides access to hi
 
 ## Tables
 
+### Types of Machine Learning
+
+| Learning Type         | Description                                          | Challenges                            | AWS Tools              | Common Use Cases                   |
+|-----------------------|------------------------------------------------------|---------------------------------------|------------------------|------------------------------------|
+| **Supervised Learning** | Uses pre-labeled data to train models.               | Labelling the data can be challenging. | SageMaker Ground Truth | Image classification, spam detection |
+| **Unsupervised Learning** | Works with unlabeled data to find patterns.         | Requires methods to interpret patterns.| None specific          | Clustering, anomaly detection, LLMs for initial training phases |
+| **Reinforcement Learning** | Learns through trial and error to maximize rewards. | Requires environment for agent interaction. | AWS DeepRacer      | Gaming, robotics, real-time decisions |
+
+
 ### Types of Diffusion Models
 
 | Diffusion Model Type | Description                                          | When to Use                                  | Examples                 |
