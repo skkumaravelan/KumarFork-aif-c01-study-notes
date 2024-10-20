@@ -42,6 +42,11 @@ AWS offers a range of managed AI services designed to be easily integrated into 
 - **Amazon Fraud Detection**
   - Detects potential fraud in various scenarios including online transactions and new account creations.
 
+#### Enterprise Data Insights
+
+- **Amazon Q Business**
+  - Generative AI-powered assistant for answering questions, generating content, and automating tasks from enterprise data sources like S3, SharePoint, and Salesforce.
+
 ---
 
 ### Amazon SageMaker
