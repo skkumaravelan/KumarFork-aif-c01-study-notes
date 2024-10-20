@@ -4,22 +4,36 @@
 - [Official Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-ai-practitioner/AWS-Certified-AI-Practitioner_Exam-Guide.pdf)
 - [Official Exam Prep - Amazon Skill Builder](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/19554/exam-prep-standard-course-aws-certified-ai-practitioner-aif-c01) - recommend watching in 1.5x
 
-## General AI
+## Overview
+
+### General AI
+- **Definition**: Refers to a broader concept of artificial intelligence, aiming to build systems that can perform any intellectual task that a human can. It’s often used to describe long-term goals of creating highly autonomous, flexible AI systems.
+- **Key Concept**: AI with a broad ability to perform multiple tasks across domains, unlike specialized AI systems.
+- **Examples**: **Expert Systems**, **Rules Engines** (e.g., MYCIN), which use predefined logic and rules to make decisions.
 
 ### Machine Learning (ML)
 - **Definition**: A subset of AI that enables systems to learn from data and make predictions or decisions without explicit programming or rules.
 - **Key Concept**: AI that operates through data patterns and training, rather than explicitly coded instructions.
+- **Examples**: **Linear Regression**, **Decision Trees**, **Support Vector Machines**—all supervised learning algorithms used for prediction tasks.
 
----
+### Deep Learning
+- **Definition**: A subset of machine learning that uses neural networks with multiple layers (hence "deep") to model complex patterns in data.
+- **Key Concept**: A powerful technique for tasks like image recognition, natural language processing, and autonomous systems, often leveraging large datasets.
+- **Examples**: **Convolutional Neural Networks (CNNs)** for image processing, **Recurrent Neural Networks (RNNs)** for time-series data or language models.
 
 ### Generative AI
 - **Definition**: A subset of deep learning that creates new solutions based on learned data, typically using foundation models.
 - **Key Concept**: AI systems that generate novel outputs, such as images, text, or music, from learned data patterns.
+- **Examples**: **ChatGPT** for text generation, **DALL·E** for image generation, **DeepDream** for generating artistic visuals.
 
-#### In-Context Learning
+---
+
+## Concepts
+
+### In-Context Learning
 - **Definition**: A method of enhancing generative AI models by adding additional data and examples to the prompt, helping the model solve tasks more effectively.
 
-#### Prompt Types
+### Prompt Types
 - **Few-Shot Prompt**: Providing a few examples in the prompt to guide the model’s behavior.
 - **Zero-Shot Prompt**: Providing no examples in the prompt, asking the model to perform the task without guidance.
 - **One-Shot Prompt**: Providing exactly one example to guide the model’s behavior.
@@ -27,11 +41,11 @@
 - **Chain-of-Thought Prompting**: A method where the prompt encourages the model to break down reasoning into steps.
 - **Prompt Tuning**: The process of adjusting prompts to improve model performance for specific tasks.
 
-#### Latent Space
+### Latent Space
 - **Definition**: The encoded knowledge or patterns captured by large language models (LLMs) that store relationships between data.
 - **Usage**: It represents the internal understanding of language or data that AI models use to generate outputs.
 
-#### Embeddings
+### Embeddings
 - **Definition**: Numerical, vectorized representations of tokens (words, phrases, etc.) that capture their semantic meaning.
 - **Use Case**: Used for tasks like semantic search, where the meaning of a word or token is important.
 - **Storage**: Can be stored in a vector database for efficient search and retrieval.
