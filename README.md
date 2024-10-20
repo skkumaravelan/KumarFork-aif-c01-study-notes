@@ -301,7 +301,7 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
   - **S3 Block Public Access**: Prevent model data from being exposed by ensuring **S3 Block Public Access** settings override any potential public access.
   - **AWS IAM Identity Center**: Centralize identity management, allowing access to multiple AWS accounts, and integrate with Active Directory for identity management.
   
-#### Tools:
+- **Tools**:
   - **AWS Config**: Continuously monitors and records configuration changes across AWS resources to ensure compliance and security.
   - **AWS CloudTrail**: Logs API calls and tracks user activity for auditing and compliance.
   - **Amazon Inspector**: Automatically scans for vulnerabilities in machine learning environments to ensure that deployed models are secure.
