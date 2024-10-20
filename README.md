@@ -1,4 +1,4 @@
-# AIF-C01 Study Notes
+# AWS Certified AI Practitioner (AIF-C01) Exam Study Notes
 
 ## Useful Links
 - [Official Exam Guide](https://d1.awsstatic.com/training-and-certification/docs-ai-practitioner/AWS-Certified-AI-Practitioner_Exam-Guide.pdf)
