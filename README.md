@@ -154,7 +154,14 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
 ### 5. Engineer Features
 - **Description**: Select and engineer features that will enhance model performance.
 - **Key Activities**:
-  - Feature selection and creation based on domain knowledge.
+  - Feature Selection: Identifying the most relevant features from your dataset based on domain knowledge, reducing dimensionality and improving model efficiency.
+  - Feature Creation: Transforming raw data into new features (e.g., scaling, encoding categorical variables, and deriving new metrics from existing ones).
+  - Feature Transformation: Applying mathematical or statistical transformations (e.g., normalization, standardization) to improve model convergence and performance.
+
+- Automated Feature Engineering: Consider using SageMaker Autopilot, which can automatically generate and rank features that could improve model performance.
+- Dimensionality Reduction: Techniques like Principal Component Analysis (PCA) can be applied to reduce the number of features while retaining the most important information.
+- Feature Scaling: Tools like AWS Glue or SageMaker DataBrew can be used to apply scaling techniques (e.g., normalization or standardization), ensuring that features contribute equally to model training.
+- Categorical Encoding: Convert categorical variables into numerical values using techniques like one-hot encoding or target encoding using SageMaker Data Wrangler or AWS Glue.
   
 - **Tools**:
   - **SageMaker Feature Store**: Store and manage features as a single source of truth.
@@ -220,8 +227,8 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
   - Set alerts and automate corrective actions if performance degrades.
 
 - **Types of Drift**:
-  - **Data Drift**: When the input data changes from what the model was trained on.
-  - **Concept Drift**: When the relationship between inputs and outputs shifts.
+  - Data Drift: The input data changes, but the relationship between inputs and outputs remains the same (e.g., a different demographic).
+  - Concept Drift: The relationship between inputs and outputs changes, meaning the model's learned patterns no longer apply (e.g., new patterns of fraud that the model wasn't trained on).
 
 - **Tools**:
   - **SageMaker Model Monitor**: Schedule and monitor data drift, send results to CloudWatch, and automate corrective measures.
@@ -334,6 +341,8 @@ The typical SageMaker training process includes several key elements that help c
   - Simplifies the process of data preparation for machine learning, enabling quick and easy data cleaning, transformation, and visualization.
 - **SageMaker Experiments (Now called MLflow with Amazon SageMaker)**
   - Tracks, organizes, views, analyzes, and compares iterative ML experimentation.
+- **SageMaker Autopilot**
+  - Automatically builds, trains, and tunes machine learning models while giving you full visibility and control over the process.
 - **Amazon Augmented AI (A2I)**
   - Allows you to add human review for low-confidence predictions or random samples, ensuring more accurate results.
 
