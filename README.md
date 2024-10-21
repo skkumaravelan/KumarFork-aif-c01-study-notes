@@ -252,6 +252,16 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
 - **Tools**:
   - **AWS API Gateway**: Expose model as an API endpoint for integration with applications.
 
+- **Tools**:
+  - **AWS API Gateway (Optional)**: Used to expose models as RESTful APIs, enabling seamless integration with other applications or microservices. It’s optional and typically used when you want external applications to interact with your model endpoint.
+  - SageMaker Deployment: Models are deployed via Docker images stored in Amazon ECR and deployed to Lambda (for Serverless Inference), EC2, EKS (Elastic Kubernetes Service), or ECS (Elastic Container Service), depending on use cases.
+  - Instance Types: SageMaker uses optimized instance types such as ML.m5, ML.c5, ML.g4, and ML.p3, providing scalable compute and GPU resources to handle inference tasks.
+  - SageMaker Endpoints: After deployment, models are served via SageMaker Endpoints for real-time inference or batch transform jobs.
+  - Bedrock Deployment:
+    - AWS Lambda: Often integrated with Bedrock for Bedrock Agents to enable automation in multi-step workflows.
+    - Amazon Kendra: When deploying Bedrock Agents, Amazon Kendra is often used for document search and knowledge-based tasks.
+    - Provisioned Throughput Tools: Provisioning inference capacity for high-throughput applications via AWS Management Console or Bedrock API.
+
 ### 8. Monitor the Model
 - **Description**: Continuously monitor the model's performance and detect any data or concept drift.
 - **Key Activities**:
