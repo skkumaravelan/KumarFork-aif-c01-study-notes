@@ -532,11 +532,11 @@ AWS Glue is a fully managed, cloud-optimized ETL (Extract, Transform, Load) serv
 
 ### Types of Diffusion Models
 
-| Diffusion Model Type | Description                                          | When to Use                                  | Examples                 |
+| Diffusion Model Type | Description                                          | When to Use                                  | Notes                 |
 |----------------------|------------------------------------------------------|----------------------------------------------|--------------------------|
-| **Forward Diffusion**| Adds noise to data progressively.                    | Understanding data degradation processes.    | Experimental AI studies  |
+| **Forward Diffusion**| Adds noise to data progressively.                    | Not often used (it adds noise)    |   |
 | **Reverse Diffusion**| Reconstructs original data from noise.               | Creating detailed images from distorted inputs. | Image restoration tools |
-| **Stable Diffusion** | Works in reduced latent space, not directly in pixels. | Generating detailed imagery with efficiency. | Midjourney, DALL-E       |
+| **Stable Diffusion** | Works in reduced latent space, not directly in pixels. | Better then Reverse Diffusion | Midjourney, DALL-E       |
 
 ### Generative AI Architectures
 
