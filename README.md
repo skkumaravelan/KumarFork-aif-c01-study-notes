@@ -183,6 +183,7 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
         - Top K is not a terribly useful parameter - use Temperature or Top-P instead. 
       - Top P:
         - Uses cumulative probability to choose tokens, focusing on the smallest set of tokens with a combined probability of P, balancing randomness and diversity.
+        - Higher Top P values (closer to 1) reduce randomness by restricting the token pool to only the most probable choices. 
       - Top-K vs Top-P: Top K fixes the number of tokens considered, while Top P uses a variable number of tokens based on their combined probability, making Top P more adaptive and flexible in balancing randomness.
       - Temperature vs. Top P: Temperature adjusts the overall randomness by scaling probabilities, allowing more or less randomness across all possible tokens. Top P narrows the token choices to those that collectively add up to a certain probability threshold, balancing randomness with accuracy.
       - Use Cases:
