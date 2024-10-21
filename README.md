@@ -281,10 +281,12 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
 - **Tools**:
   - **SageMaker Clarify**: Detect bias, explain model predictions, and increase transparency.
   - **SageMaker Model Cards**: Create documentation for trained models, including performance metrics and intended use.
+  - **ML Governance from SageMaker**: Provides tools for tighter control and visibility over ML models, helping track model information and monitor behavior like bias.
   - **SageMaker ML Lineage Tracking**: Capture the entire workflow, tracking model lineage for reproducibility and governance.
   - **Glue DataBrew**: Simplify data governance with visual data preparation and quality rules.
   - **AWS Audit Manager**: Automates the auditing of AWS services, ensuring continuous compliance and audit readiness for industry regulations.
   - **AWS Artifact**: Provides on-demand access to compliance reports and agreements, helping organizations meet compliance requirements.
+  - **AWS AI Service Cards**: Enhance transparency by providing information on use cases, limitations, responsible AI practices, and performance best practices for AI services and models.
   
 ---
 
@@ -449,6 +451,8 @@ Amazon Bedrock is a fully managed, serverless service that provides access to hi
     - Exclusive to Amazon Bedrock, Amazon Titan models are pretrained, high-performing foundation models created by AWS, designed for a wide range of use cases with responsible AI practices.
 - **Customization**  
   - Customize foundation models privately with your data using techniques such as fine-tuning and Retrieval Augmented Generation (RAG), enhancing the model's relevance and accuracy.
+- **Foundation Model Evaluation**
+  - Model Evaluation on Amazon Bedrock allows you to evaluate, compare, and select the best foundation models for your specific use case. You can assess models based on custom metrics such as accuracy, robustness, and toxicity, ensuring they meet your performance requirements. Integration with Amazon SageMaker Clarify and fmeval further supports model evaluation by checking for bias and explainability.
 - **Bedrock Knowledge Bases**
   - Uses Retrieval Augmented Generation (RAG) to fetch data from private sources, delivering more relevant and accurate responses with full support for the RAG workflow—handling data ingestion, retrieval, and prompt augmentation.
   - Enhances outputs by integrating retrieval processes that pull relevant external knowledge into the generative model.
