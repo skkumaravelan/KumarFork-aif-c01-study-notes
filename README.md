@@ -360,6 +360,8 @@ AWS offers a range of managed AI services designed to be easily integrated into 
   - Converts scanned images to text, enabling digital content management.
 - **Amazon Comprehend** (NLP)
   - Extracts key phrases, entities, and sentiment from text. Useful for analyzing _sentiment of feedback_ and detecting _PII data_.
+- **AWS Intelligent Document Processing** (IDP)
+  - A group of AWS services that together automate the extraction, classification, and processing of data from various document types. It leverages AI technologies such as Optical Character Recognition (OCR), Natural Language Processing (NLP), and Machine Learning (ML) to handle unstructured data found in documents like PDFs, invoices, and legal contracts.
 
 #### Language AI
 - **Amazon Lex**
