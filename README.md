@@ -70,6 +70,9 @@
   - Fine-Tuning: Training the model on more relevant, accurate data can help reduce hallucinations by aligning the model’s output with factual knowledge.
   - Human-in-the-Loop (HITL): Incorporating human review in low-confidence areas can prevent hallucinated outputs from being used in critical applications.
 
+### Multi-Modal Models
+- **Definition**: Models that work across multiple data types, embedding text, images, or even audio into a shared space. These models are commonly used for multimodal generation tasks, such as creating captions for images or generating visuals from textual descriptions, by leveraging different types of input to produce richer, more context-aware outputs.
+  
 ---
 
 ### Search Methods
@@ -230,6 +233,9 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
  
 - **Continued-Pretraining** (BedRock):
   - Using _unlabeled_ data to expand the model's overall knowledge without narrowing its scope to a specific task.
+ 
+- **Transfer Learning**:
+  - Fine-tuning an existing model that has learned general features and applying it to a new problem, speeding up training and improving accuracy.
      
 - **Tools**:
   - **SageMaker Training Jobs**: Manage training processes, specify training data, hyperparameters, and compute resources.
@@ -395,10 +401,18 @@ AWS offers a range of managed AI services designed to be easily integrated into 
 - **Amazon Fraud Detection**
   - Detects potential fraud in various scenarios including online transactions and new account creations.
 
-#### Enterprise Data Insights
+#### Amazon Q
 
-- **Amazon Q Business**
-  - Generative AI-powered assistant for answering questions, generating content, and automating tasks from enterprise data sources like S3, SharePoint, and Salesforce.
+-- **Amazon Q Business**
+  - A generative AI-powered assistant that helps with tasks like answering questions, generating content, and automating workflows by accessing enterprise data sources like S3, SharePoint, and Salesforce.
+-- **Amazon Q Developer**
+  - A tool for developers that includes features like code generation and security scanning to help automate tasks related to development and testing.
+-- **Amazon Q in QuickSight**
+  - Integrated with Amazon QuickSight for natural language querying, allowing users to ask business intelligence-related questions and generate insights from their QuickSight data with AI.
+-- **Amazon Q in Connect**
+  - Integrated with Amazon Connect, Amazon Q helps improve customer service by answering customer inquiries, automating responses, and managing tickets using natural language AI.
+-- **Amazon Q in AWS Supply Chain**
+  - Integrated into AWS Supply Chain, Amazon Q assists in optimizing and automating supply chain management by generating insights from supply chain data, streamlining inventory management, and forecasting demand.
 
 ---
 
