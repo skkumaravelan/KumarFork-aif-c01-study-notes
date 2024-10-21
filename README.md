@@ -201,6 +201,10 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
       - Smaller batch sizes provide more frequent updates, which can help in converging quickly but can introduce more noise. Larger batch sizes are more stable but may require more computation and memory.
     - **Learning Rate**: Controls how fast the model learns.
       - A high learning rate speeds up training but may skip optimal solutions, while a low learning rate leads to slower but more precise convergence, though it risks getting stuck in local minima.
+
+- **Error Metrics**:
+  - MSE (Mean Squared Error): During model evaluation, MSE is often used to measure how well the model is performing. It calculates the average squared difference between predicted values and actual values, giving more weight to larger errors. A lower MSE indicates better performance, making it useful for comparing different models or tuning hyperparameters.
+  - RMSE (Root Mean Squared Error): RMSE is the square root of MSE and gives an error measure in the same unit as the predicted values, making it more interpretable. RMSE is also used during evaluation to see how much error is expected per prediction. Like MSE, lower RMSE values signal better model performance.
    
 - **Model Training Issues**:
   - **Overfitting**: Too much training on the same data, causing the model to be overly specific.
