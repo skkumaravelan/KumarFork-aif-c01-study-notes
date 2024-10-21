@@ -279,7 +279,7 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
   - Use tools to detect and mitigate bias, ensure fairness, and explain predictions.
   - Provide clear documentation of model history and performance for audits.
 - **Tools**:
-  - **SageMaker Clarify**: Detect bias, explain model predictions, and increase transparency.
+  - **SageMaker Clarify**: _Detect bias_, explain model predictions, and increase transparency.
   - **SageMaker Model Cards**: Create documentation for trained models, including performance metrics and intended use.
   - **ML Governance from SageMaker**: Provides tools for tighter control and visibility over ML models, helping track model information and monitor behavior like bias.
   - **SageMaker ML Lineage Tracking**: Capture the entire workflow, tracking model lineage for reproducibility and governance.
