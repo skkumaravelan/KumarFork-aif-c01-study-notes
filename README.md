@@ -449,15 +449,15 @@ AWS offers a range of managed AI services designed to be easily integrated into 
 
 #### Amazon Q
 
--- **Amazon Q Business**
+- **Amazon Q Business**
   - A generative AI-powered assistant that helps with tasks like answering questions, generating content, and automating workflows by accessing enterprise data sources like S3, SharePoint, and Salesforce.
--- **Amazon Q Developer**
+- **Amazon Q Developer**
   - A tool for developers that includes features like code generation and security scanning to help automate tasks related to development and testing.
--- **Amazon Q in QuickSight**
+- **Amazon Q in QuickSight**
   - Integrated with Amazon QuickSight for natural language querying, allowing users to ask business intelligence-related questions and generate insights from their QuickSight data with AI.
--- **Amazon Q in Connect**
+- **Amazon Q in Connect**
   - Integrated with Amazon Connect, Amazon Q helps improve customer service by answering customer inquiries, automating responses, and managing tickets using natural language AI.
--- **Amazon Q in AWS Supply Chain**
+- **Amazon Q in AWS Supply Chain**
   - Integrated into AWS Supply Chain, Amazon Q assists in optimizing and automating supply chain management by generating insights from supply chain data, streamlining inventory management, and forecasting demand.
 
 ---
