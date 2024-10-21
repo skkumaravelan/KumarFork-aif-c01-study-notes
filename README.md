@@ -643,9 +643,9 @@ AWS Glue is a fully managed, cloud-optimized ETL (Extract, Transform, Load) serv
 
 | **Name**             | **When to Use**                              | **Example**                     | **Higher is Better/Worse** | **Formula**                                           |
 |----------------------|----------------------------------------------|----------------------------------|---------------------------|-------------------------------------------------------|
-| **Precision**         | To minimize false positives                  | Spam detection                   | Higher is better           | Precision = TP / (TP + FP)                            |
-| **Recall (TPR)**      | To minimize false negatives                  | Disease screenings               | Higher is better           | Recall = TP / (TP + FN)                              |
-| **False Positive Rate** | To avoid incorrect positive predictions      | Security alarms                  | Lower is better            | FPR = FP / (FP + TN)                                  |
-| **Specificity (TNR)** | To maximize correct negative predictions     | Identifying non-diseased patients | Higher is better           | Specificity = TN / (TN + FP)                          |
+| **Precision**         | To minimize false positives                  | Flag valid email as spam                   | Higher is better           | Precision = TP / (TP + FP)                            |
+| **Recall (TPR)**      | To minimize false negatives                  | Miss a disease diagnosis               | Higher is better           | Recall = TP / (TP + FN)                              |
+| **False Positive Rate** | To avoid incorrect positive predictions      | False alarm                 | Lower is better            | FPR = FP / (FP + TN)                                  |
+| **Specificity (TNR)** | To maximize correct negative predictions     | Healthy flagged as sick  | Higher is better           | Specificity = TN / (TN + FP)                          |
 | **Accuracy**          | For general correctness across all predictions | Image classification             | Higher is better           | Accuracy = (TP + TN) / (TP + TN + FP + FN)            |
 | **F1 Score**          | When both precision and recall matter equally | Document classification          | Higher is better           | F1 Score = 2 * (Precision * Recall) / (Precision + Recall) |
