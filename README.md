@@ -191,8 +191,11 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
       - Defines specific sequences where the model will stop generating text, ensuring controlled output length or format.
   - **Model Training Parameters** (Hyperparameters):
     - **Epoch**: The number of iterations through the entire dataset.
+      - Increasing epochs generally improves the model's learning but can lead to overfitting if too high. More epochs help the model learn better but might also result in diminishing returns after a certain point.
     - **Batch Size**: Number of samples before updating model parameters.
+      - Smaller batch sizes provide more frequent updates, which can help in converging quickly but can introduce more noise. Larger batch sizes are more stable but may require more computation and memory.
     - **Learning Rate**: Controls how fast the model learns.
+      - A high learning rate speeds up training but may skip optimal solutions, while a low learning rate leads to slower but more precise convergence, though it risks getting stuck in local minima.
    
 - **Model Training Issues**:
   - **Overfitting**: Too much training on the same data, causing the model to be overly specific.
