@@ -175,8 +175,20 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
 
 - **Parameters**:
   - **Inference Parameters** (supported by Amazon Bedrock):
-    - **Randomness and Diversity**: Temperature, Top K, Top P.
-    - **Length**: Response length, penalties, stop sequences.
+    - **Randomness and Diversity**:
+      - Temperature:
+        - Controls randomness—higher values lead to more diverse, creative outputs; lower values produce more predictable, deterministic results.
+      - Top K:
+        - Limits the model to selecting from the top K most probable tokens; smaller K values result in safer, more predictable choices.
+      - Top P:
+        - Uses cumulative probability to choose tokens, focusing on the smallest set of tokens with a combined probability of P, balancing randomness and diversity.
+      - Key Difference: Top K fixes the number of tokens considered, while Top P uses a variable number of tokens based on their combined probability, making Top P more adaptive and flexible in balancing randomness.
+    - Response length:
+      - Specifies the maximum length of generated output, affecting how verbose or concise the response is.
+    - Penalties:
+      - Applies penalties to repeated tokens or sequences to encourage variety in the generated text.
+    - Stop sequences:
+      - Defines specific sequences where the model will stop generating text, ensuring controlled output length or format.
   - **Model Training Parameters** (Hyperparameters):
     - **Epoch**: The number of iterations through the entire dataset.
     - **Batch Size**: Number of samples before updating model parameters.
