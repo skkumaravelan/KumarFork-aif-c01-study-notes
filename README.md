@@ -141,6 +141,7 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
   - **AWS Glue**: For **ETL (Extract, Transform, Load)** processes, moving and transforming data into a usable format before storage in **Amazon S3**.
   - **SageMaker Ground Truth**: For human labeling of ambiguous data, with labeled data stored in **Amazon S3**.
   - **AWS Data Exchange**: Allows secure access to third-party datasets. These datasets can be used as additional sources of training data, and the ingested data is stored in **Amazon S3**.
+  - **Amazon S3**: Primary storage service where collected data is securely stored before being processed or used for training.
 
 ### 4. Pre-Process Data
 
@@ -301,7 +302,11 @@ Here’s the updated **Error Metrics** section, now including the additional met
 - **Tools**:
   - **AWS API Gateway (Optional)**: Used to expose models as RESTful APIs, enabling seamless integration with other applications or microservices. It’s optional and typically used when you want external applications to interact with your model endpoint.
   - SageMaker Deployment: Models are deployed via Docker images stored in Amazon ECR and deployed to Lambda (for Serverless Inference), EC2, EKS (Elastic Kubernetes Service), or ECS (Elastic Container Service), depending on use cases.
-  - Instance Types: SageMaker uses optimized instance types such as ML.m5, ML.c5, ML.g4, and ML.p3, providing scalable compute and GPU resources to handle inference tasks.
+  - Instance Types:
+    - Inf1: Optimized for cost-effective, high-performance deep learning inference using AWS Inferentia chips.
+    - P4: Powered by NVIDIA A100 GPUs, ideal for large-scale, high-performance inference with very low latency.
+    - G5: Designed for GPU-based workloads, optimized for graphics and machine learning inference with NVIDIA GPUs.
+    - Graviton2 (C6g, M6g): Energy-efficient, ARM-based instances for general-purpose machine learning inference tasks.
   - SageMaker Endpoints: After deployment, models are served via SageMaker Endpoints for real-time inference or batch transform jobs.
   - Bedrock Deployment:
     - AWS Lambda: Often integrated with Bedrock for Bedrock Agents to enable automation in multi-step workflows.
@@ -333,6 +338,7 @@ Here’s the updated **Error Metrics** section, now including the additional met
   - **SageMaker Pipelines**: Automate and manage the ML workflow end-to-end.
   - **AWS CodePipeline**: Automate the build, test, and deploy phases for models.
   - **SageMaker Model Registry**: Manage and track model versions and metadata.
+  - **Amazon S3**: Used to store trained model artifacts after training for both SageMaker and Bedrock. Model outputs, including weights and artifacts, are exported to S3 for easy access during deployment and evaluation.
 
 ---
 
@@ -592,14 +598,6 @@ AWS Glue is a fully managed, cloud-optimized ETL (Extract, Transform, Load) serv
 | **Reverse Diffusion**| Reconstructs original data from noise.               | Creating detailed images from distorted inputs. | Image restoration tools |
 | **Stable Diffusion** | Works in reduced latent space, not directly in pixels. | Better then Reverse Diffusion | Midjourney, DALL-E       |
 
-### Generative AI Architectures
-
-| Generative AI Type          | Description                                                   | When to Use                                              | Examples                       |
-|-----------------------------|---------------------------------------------------------------|----------------------------------------------------------|--------------------------------|
-| **Generative Adversarial Network (GANs)** | Two-part model with generator and discriminator networks.     | Creating realistic images, videos, and voice synthesis.  | StyleGAN for photorealistic portraits |
-| **Variational Autoencoders (VAEs)**       | Uses probability distributions to encode and decode data.      | Generating new data points with similar statistical properties. | Drug discovery, anomaly detection |
-| **Transformers**                         | Leverages attention mechanisms to weigh the influence of different parts of the input data. | Natural language processing, image generation at scale.  | GPT-3 for text, DALL-E for images   |
-
 
 ### Amazon SageMaker Inference Methods
 
@@ -692,14 +690,3 @@ AWS Glue is a fully managed, cloud-optimized ETL (Extract, Transform, Load) serv
 | **Amazon OpenSearch Service**       | Search service with vector database support for similarity search.                                                                                                   |
 | **MSE (Mean Squared Error)**        | Average squared difference between predicted and actual values, lower MSE indicates better model performance.                                                        |
 | **RMSE (Root Mean Squared Error)**  | Square root of MSE, more interpretable; lower RMSE is better.                                                                                                        |
-
-### Confusion Matrix Evaluation Metrics
-
-| **Name**             | **When to Use**                                             | **Example**                                                                 | **Higher is Better/Worse** | **Formula**                                           |
-|----------------------|-------------------------------------------------------------|----------------------------------------------------------------------------|---------------------------|-------------------------------------------------------|
-| **Precision**         | When minimizing **false positives** is crucial.              | **Spam detection (avoiding false positives)**: Avoiding flagging legitimate emails as spam.            | Higher is better           | Precision = TP / (TP + FP)                            |
-| **Recall (TPR)**      | When minimizing **false negatives** is critical, focusing on **identifying all positives**.  | **Disease screenings (minimizing false negatives)**: Ensuring that no diseased patients are missed.       | Higher is better           | Recall = TP / (TP + FN)                              |
-| **False Positive Rate (FPR)** | When you need to avoid **false alarms** or incorrect positive predictions. | **Security alarms (avoiding false positives)**: Avoiding alarms for non-threats or normal behavior.    | Lower is better            | FPR = FP / (FP + TN)                                  |
-| **Specificity (TNR)** | When minimizing **false positives** and correctly identifying **negatives** is important. | **Non-diseased patients (correct negatives)**: Correctly identifying healthy individuals in medical testing. | Higher is better           | Specificity = TN / (TN + FP)                          |
-| **Accuracy**          | For general correctness across both **positives and negatives**. | **Image classification (overall correctness)**: Correctly identifying both cats and dogs in a dataset. | Higher is better           | Accuracy = (TP + TN) / (TP + TN + FP + FN)            |
-| **F1 Score**          | When both **precision and recall** are important, and you want a balance between the two. | **Document classification**: Ensuring correct tagging of documents with minimal errors across both positives and negatives. | Higher is better           | F1 Score = 2 * (Precision * Recall) / (Precision + Recall) |
