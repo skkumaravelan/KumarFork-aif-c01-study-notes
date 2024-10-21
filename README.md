@@ -641,11 +641,12 @@ AWS Glue is a fully managed, cloud-optimized ETL (Extract, Transform, Load) serv
 
 ### Confusion Matrix Evaluation Metrics
 
-| **Name**             | **When to Use**                              | **Example**                     | **Higher is Better/Worse** | **Formula**                                           |
-|----------------------|----------------------------------------------|----------------------------------|---------------------------|-------------------------------------------------------|
-| **Precision**         | To minimize false positives                  | Flag valid email as spam                   | Higher is better           | Precision = TP / (TP + FP)                            |
-| **Recall (TPR)**      | To minimize false negatives                  | Miss a disease diagnosis               | Higher is better           | Recall = TP / (TP + FN)                              |
-| **False Positive Rate (FPR)** | To avoid incorrect positive predictions      | False alarm                 | Lower is better            | FPR = FP / (FP + TN)                                  |
-| **Specificity (TNR)** | To maximize correct negative predictions     | Healthy flagged as sick  | Higher is better           | Specificity = TN / (TN + FP)                          |
-| **Accuracy**          | For general correctness across all predictions | Image classification             | Higher is better           | Accuracy = (TP + TN) / (TP + TN + FP + FN)            |
-| **F1 Score**          | When both precision and recall matter equally | Document classification          | Higher is better           | F1 Score = 2 * (Precision * Recall) / (Precision + Recall) |
+| **Name**             | **When to Use**                                             | **Example**                     | **Higher is Better/Worse** | **Formula**                                           |
+|----------------------|-------------------------------------------------------------|----------------------------------|---------------------------|-------------------------------------------------------|
+| **Precision**         | When minimizing **false positives** is crucial.              | Spam detection                   | Higher is better           | Precision = TP / (TP + FP)                            |
+| **Recall (TPR)**      | When minimizing **false negatives** is critical, focusing on **identifying all positives**.  | Disease screenings               | Higher is better           | Recall = TP / (TP + FN)                              |
+| **False Positive Rate** | When you need to avoid **false alarms** or incorrect positive predictions. | Security alarms                  | Lower is better            | FPR = FP / (FP + TN)                                  |
+| **Specificity (TNR)** | When minimizing **false positives** and correctly identifying **negatives** is important. | Identifying non-diseased patients | Higher is better           | Specificity = TN / (TN + FP)                          |
+| **Accuracy**          | For general correctness across both **positives and negatives**. | Image classification             | Higher is better           | Accuracy = (TP + TN) / (TP + TN + FP + FN)            |
+| **F1 Score**          | When both **precision and recall** are important, and you want a balance between the two. | Document classification          | Higher is better           | F1 Score = 2 * (Precision * Recall) / (Precision + Recall) |
+
