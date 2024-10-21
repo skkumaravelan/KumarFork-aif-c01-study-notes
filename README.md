@@ -386,6 +386,10 @@ AWS offers a range of managed AI services designed to be easily integrated into 
 
 Amazon SageMaker is an integrated machine learning service that enables developers and data scientists to build, train, and deploy machine learning models at scale. Users can create custom models from scratch or use and fine-tune existing ones through SageMaker JumpStart. This platform offers more control than high-level AI services like AWS Rekognition, allowing for detailed customization and optimization to meet specific project requirements.
 
+#### SageMaker Studio
+
+SageMaker Studio is an integrated development environment (IDE) for machine learning, providing a single interface for preparing data, building models, training, tuning, and deploying them. It offers features like Jupyter notebooks for code development, integrated debugging tools, and experiment management, all within a collaborative, cloud-based environment. Studio also supports real-time collaboration and easy access to various SageMaker capabilities, including model monitoring and data preparation.
+
 ####  Training Process
 
 The typical SageMaker training process includes several key elements that help configure and manage the training jobs:
