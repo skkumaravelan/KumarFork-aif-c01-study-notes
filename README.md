@@ -180,6 +180,7 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
         - Controls randomness—higher values lead to more diverse, creative outputs; lower values produce more predictable, deterministic results.
       - Top K:
         - Limits the model to selecting from the top K most probable tokens; smaller K values result in safer, more predictable choices.
+        - Top K is not a terribly useful parameter - use Temperature or Top-P instead. 
       - Top P:
         - Uses cumulative probability to choose tokens, focusing on the smallest set of tokens with a combined probability of P, balancing randomness and diversity.
       - Key Difference: Top K fixes the number of tokens considered, while Top P uses a variable number of tokens based on their combined probability, making Top P more adaptive and flexible in balancing randomness.
