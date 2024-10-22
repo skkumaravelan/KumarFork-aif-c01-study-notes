@@ -213,9 +213,7 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
       - Smaller batch sizes provide more frequent updates, which can help in converging quickly but can introduce more noise. Larger batch sizes are more stable but may require more computation and memory.
     - **Learning Rate**: Controls how fast the model learns.
       - A high learning rate speeds up training but may skip optimal solutions, while a low learning rate leads to slower but more precise convergence, though it risks getting stuck in local minima.
-
-Here’s the updated **Error Metrics** section, now including the additional metrics you requested, along with definitions and examples for each:
-
+        
 ### **Error Metrics**
 
 - **MSE (Mean Squared Error)**: During model evaluation, MSE calculates the average squared difference between predicted values and actual values, giving more weight to larger errors. A lower MSE indicates better performance, making it useful for comparing different models or tuning hyperparameters.
