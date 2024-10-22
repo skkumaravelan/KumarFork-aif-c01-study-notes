@@ -214,7 +214,7 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
     - **Learning Rate**: Controls how fast the model learns.
       - A high learning rate speeds up training but may skip optimal solutions, while a low learning rate leads to slower but more precise convergence, though it risks getting stuck in local minima.
         
-### **Error Metrics**
+- **Error Metrics**:
 
 - **MSE (Mean Squared Error)**: During model evaluation, MSE calculates the average squared difference between predicted values and actual values, giving more weight to larger errors. A lower MSE indicates better performance, making it useful for comparing different models or tuning hyperparameters.
   - **Use Case**: Useful in regression problems like predicting house prices or stock values.
