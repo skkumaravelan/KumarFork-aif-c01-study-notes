@@ -216,45 +216,45 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
         
 - **Error Metrics**:
 
-- **MSE (Mean Squared Error)**: During model evaluation, MSE calculates the average squared difference between predicted values and actual values, giving more weight to larger errors. A lower MSE indicates better performance, making it useful for comparing different models or tuning hyperparameters.
-  - **Use Case**: Useful in regression problems like predicting house prices or stock values.
-  - **Rule of Thumb**: Lower is better, as it means the model’s predictions are closer to the actual values.
+  - **MSE (Mean Squared Error)**: During model evaluation, MSE calculates the average squared difference between predicted values and actual values, giving more weight to larger errors. A lower MSE indicates better performance, making it useful for comparing different models or tuning hyperparameters.
+    - **Use Case**: Useful in regression problems like predicting house prices or stock values.
+    - **Rule of Thumb**: Lower is better, as it means the model’s predictions are closer to the actual values.
+    
+  - **RMSE (Root Mean Squared Error)**: RMSE is the square root of MSE and gives an error measure in the same unit as the predicted values, making it more interpretable. RMSE is used to see how much error is expected per prediction.
+    - **Use Case**: Often used alongside MSE in regression problems for easier interpretability.
+    - **Rule of Thumb**: Lower RMSE means better model performance.
   
-- **RMSE (Root Mean Squared Error)**: RMSE is the square root of MSE and gives an error measure in the same unit as the predicted values, making it more interpretable. RMSE is used to see how much error is expected per prediction.
-  - **Use Case**: Often used alongside MSE in regression problems for easier interpretability.
-  - **Rule of Thumb**: Lower RMSE means better model performance.
-
-- **Perplexity**: Perplexity measures how well a model predicts a sequence of tokens (e.g., words). Lower perplexity indicates better performance, as it means the model is better at predicting the next word in a sequence.
-  - **Use Case**: Commonly used for language models, such as evaluating how well a model predicts the next word in a sentence.
-  - **Rule of Thumb**: Lower perplexity means better predictive performance.
-
-- **Precision**: Precision is the ratio of true positives to the total number of positive predictions (true positives + false positives). It is used when minimizing false positives is important.
-  - **Use Case**: Often used in classification tasks like spam detection, where avoiding false positives is critical.
-  - **Rule of Thumb**: Higher precision is better when the cost of false positives is high.
-
-- **Recall (TPR)**: Recall (True Positive Rate) is the ratio of true positives to the total actual positives (true positives + false negatives). It is used when minimizing false negatives is crucial.
-  - **Use Case**: Commonly used in medical testing (e.g., disease screenings) to avoid missing positive cases.
-  - **Rule of Thumb**: Higher recall is better when missing positive cases is costly.
-
-- **False Positive Rate (FPR)**: FPR is the ratio of false positives to the total number of negatives (false positives + true negatives). It is used to measure how often incorrect positive predictions are made.
-  - **Use Case**: Often used in security applications, like fraud detection or alarms, where false positives should be minimized.
-  - **Rule of Thumb**: Lower FPR is better, as it means fewer false alarms.
-
-- **Specificity (TNR)**: Specificity (True Negative Rate) is the ratio of true negatives to the total actual negatives (true negatives + false positives). It measures how well the model identifies negative instances.
-  - **Use Case**: Used in medical testing to correctly identify non-diseased patients.
-  - **Rule of Thumb**: Higher specificity is better when identifying true negatives is important.
-
-- **Accuracy**: Accuracy is the ratio of correct predictions (both true positives and true negatives) to the total number of predictions. It is used when both positive and negative predictions are equally important.
-  - **Use Case**: Typically used in balanced classification tasks like image classification.
-  - **Rule of Thumb**: Higher accuracy is better for overall correctness.
-
-- **F1 Score**: The F1 Score is the harmonic mean of precision and recall, used when there is a need for a balance between precision and recall.
-  - **Use Case**: Used in document classification or tasks where both false positives and false negatives matter.
-  - **Rule of Thumb**: Higher F1 score means better balance between precision and recall.
-
-- **ROC Curve**: The ROC (Receiver Operating Characteristic) curve plots the true positive rate (recall) against the false positive rate at various threshold levels. It is used to evaluate the trade-off between sensitivity and specificity.
-  - **Use Case**: Commonly used in binary classification problems to visualize the model’s performance across different thresholds.
-  - **Rule of Thumb**: A higher area under the ROC curve (AUC) indicates better model performance.
+  - **Perplexity**: Perplexity measures how well a model predicts a sequence of tokens (e.g., words). Lower perplexity indicates better performance, as it means the model is better at predicting the next word in a sequence.
+    - **Use Case**: Commonly used for language models, such as evaluating how well a model predicts the next word in a sentence.
+    - **Rule of Thumb**: Lower perplexity means better predictive performance.
+  
+  - **Precision**: Precision is the ratio of true positives to the total number of positive predictions (true positives + false positives). It is used when minimizing false positives is important.
+    - **Use Case**: Often used in classification tasks like spam detection, where avoiding false positives is critical.
+    - **Rule of Thumb**: Higher precision is better when the cost of false positives is high.
+  
+  - **Recall (TPR)**: Recall (True Positive Rate) is the ratio of true positives to the total actual positives (true positives + false negatives). It is used when minimizing false negatives is crucial.
+    - **Use Case**: Commonly used in medical testing (e.g., disease screenings) to avoid missing positive cases.
+    - **Rule of Thumb**: Higher recall is better when missing positive cases is costly.
+  
+  - **False Positive Rate (FPR)**: FPR is the ratio of false positives to the total number of negatives (false positives + true negatives). It is used to measure how often incorrect positive predictions are made.
+    - **Use Case**: Often used in security applications, like fraud detection or alarms, where false positives should be minimized.
+    - **Rule of Thumb**: Lower FPR is better, as it means fewer false alarms.
+  
+  - **Specificity (TNR)**: Specificity (True Negative Rate) is the ratio of true negatives to the total actual negatives (true negatives + false positives). It measures how well the model identifies negative instances.
+    - **Use Case**: Used in medical testing to correctly identify non-diseased patients.
+    - **Rule of Thumb**: Higher specificity is better when identifying true negatives is important.
+  
+  - **Accuracy**: Accuracy is the ratio of correct predictions (both true positives and true negatives) to the total number of predictions. It is used when both positive and negative predictions are equally important.
+    - **Use Case**: Typically used in balanced classification tasks like image classification.
+    - **Rule of Thumb**: Higher accuracy is better for overall correctness.
+  
+  - **F1 Score**: The F1 Score is the harmonic mean of precision and recall, used when there is a need for a balance between precision and recall.
+    - **Use Case**: Used in document classification or tasks where both false positives and false negatives matter.
+    - **Rule of Thumb**: Higher F1 score means better balance between precision and recall.
+  
+  - **ROC Curve**: The ROC (Receiver Operating Characteristic) curve plots the true positive rate (recall) against the false positive rate at various threshold levels. It is used to evaluate the trade-off between sensitivity and specificity.
+    - **Use Case**: Commonly used in binary classification problems to visualize the model’s performance across different thresholds.
+    - **Rule of Thumb**: A higher area under the ROC curve (AUC) indicates better model performance.
   
 - **Model Training Issues**:
   - **Overfitting**: Too much training on the same data, causing the model to be overly specific.
