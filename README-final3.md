@@ -608,106 +608,41 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
   - **Real-time Inference**: Immediate predictions for individual requests
   - **Streaming Inference**: Continuous processing of data streams
 
-#### Evaluation Metrics
+***
 
-  ##### Regression Metrics
-  - **MSE (Mean Squared Error)**: During model evaluation, MSE calculates the average squared difference between predicted values and actual values, giving more weight to larger errors. A lower MSE indicates better performance, making it useful for comparing different models or tuning hyperparameters.
-      - **Use Case**: Useful in regression problems like predicting house prices or stock values.
-      - **Rule of Thumb**: Lower is better, as it means the model's predictions are closer to the actual values.
-      
-  - **RMSE (Root Mean Squared Error)**: RMSE is the square root of MSE and gives an error measure in the same unit as the predicted values, making it more interpretable. RMSE is used to see how much error is expected per prediction.
-      - **Use Case**: Often used alongside MSE in regression problems for easier interpretability.
-      - **Rule of Thumb**: Lower RMSE means better model performance.
-  
-  - **MAE (Mean Absolute Error)**:
-      - **Formula**: Average of absolute differences between predicted and actual values
-      - **Characteristics**: Less sensitive to outliers than MSE, same units as target variable
-      - **Use Case**: When outliers shouldn't heavily influence model evaluation
-      - **Rule of Thumb**: Lower MAE indicates better performance
-  
-  - **MAPE (Mean Absolute Percentage Error)**:
-      - **Formula**: Average of absolute percentage errors between predicted and actual values
-      - **Characteristics**: Scale-independent, interpretable as percentage error
-      - **Limitations**: Undefined when actual values are zero, biased toward underestimation
-      - **Use Case**: Comparing models across different scales, business reporting
-      - **Rule of Thumb**: MAPE < 10% = excellent, 10-20% = good, 20-50% = reasonable, >50% = poor
+### Regression Metrics  
+- **MSE (Mean Squared Error):** Measures average squared difference between predicted and true values. Lower is better. Used for continuous value predictions like house prices.  
+- **RMSE (Root Mean Squared Error):** Square root of MSE; error in same units as output. Easier to interpret than MSE.  
+- **MAE (Mean Absolute Error):** Average absolute difference; less sensitive to outliers. Useful when outliers should not dominate evaluation.  
+- **MAPE (Mean Absolute Percentage Error):** Percentage-based error metric; good for comparing across scales but can be biased near zero values.  
 
-##### Classification Metrics
+***
 
-  #### Confusion Matrix
-  | Actual/Predicted | Positive | Negative |
-  |------------------|----------|----------|
-  | **Positive** | True Positive (TP) | False Negative (FN) |
-  | **Negative** | False Positive (FP) | True Negative (TN) |
-  
-  **Key Calculations:**
-  - Accuracy = (TP + TN) / (TP + TN + FP + FN)
-  - Precision = TP / (TP + FP)
-  - Recall = TP / (TP + FN)
-  - Specificity = TN / (TN + FP)
-  
-  | Metric | Explanation | Use Case |
-  |--------|-------------|----------|
-  | **Accuracy** | Overall correctness of predictions | Balanced datasets with equal class importance |
-  | **Precision** | Quality of positive predictions | When false positives are costly (spam detection) |
-  | **Recall (Sensitivity)** | Coverage of actual positives | When false negatives are costly (medical screening) |
-  | **F1-Score** | Balance between precision and recall | When both precision and recall matter equally |
-  | **Specificity** | Quality of negative predictions | When correctly identifying negatives is important |
-  
-  #### AUC-ROC Curve
-  - **ROC Curve**: Plots True Positive Rate vs False Positive Rate at various thresholds
-  - **AUC (Area Under Curve)**: Measures model's ability to distinguish between classes
-    - **AUC = 0.5**: Random classifier
-    - **AUC = 0.7-0.8**: Fair performance
-    - **AUC = 0.8-0.9**: Good performance
-    - **AUC > 0.9**: Excellent performance
-  - **Use Case**: Comparing multiple models, threshold selection
+### Classification Metrics  
+- **Confusion Matrix:** Summarizes prediction results into True Positives (TP), False Positives (FP), True Negatives (TN), and False Negatives (FN).  
+- **Accuracy:** Overall correctness of predictions. Best with balanced classes.  
+- **Precision:** Ratio of correct positive predictions to total positives predicted. Important when false positives are costly (e.g., spam detection).  
+- **Recall (Sensitivity):** Ratio of detected positives to all actual positives. Important when missing positives is costly (e.g., disease detection).  
+- **F1-Score:** Balance between precision and recall, useful when both errors matter.  
+- **Specificity:** Ratio of correct negative predictions; important when identifying negatives well matters.  
+- **AUC-ROC Curve:** Visualizes trade-off between true positive and false positive rates at different thresholds. Higher area under curve means better class separation.  
 
-##### Performance Metrics
-  | Metric | Explanation | Use Case |
-  |--------|-------------|----------|
-  | **Average Response Time** | Mean time for model to return prediction | Real-time applications requiring fast responses |
-  | **Data Throughput** | Number of requests processed per second | Batch processing and high-volume applications |
-  | **P95/P99 Latency** | 95th/99th percentile response times | SLA compliance and user experience optimization |
+***
 
-##### Advanced Evaluation Metrics
-  | Metric | Explanation | Use Case |
-  |--------|-------------|----------|
-  | **ROUGE Score** | Measures overlap between generated and reference text | Text summarization quality evaluation |
-  | **BLEU Score** | Evaluates translation quality using n-gram matching | Machine translation accuracy assessment |
-  | **BERTScore** | Semantic similarity using contextual embeddings | Text generation quality with meaning preservation |
-    
-  - **Precision**: Precision is the ratio of true positives to the total number of positive predictions (true positives + false positives). It is used when minimizing false positives is important.
-      - **Use Case**: Often used in classification tasks like spam detection, where avoiding false positives is critical.
-      - **Rule of Thumb**: Higher precision is better when the cost of false positives is high.
-    
-  - **Recall (TPR)**: Recall (True Positive Rate) is the ratio of true positives to the total actual positives (true positives + false negatives). It is used when minimizing false negatives is crucial.
-      - **Use Case**: Commonly used in medical testing (e.g., disease screenings) to avoid missing positive cases.
-      - **Rule of Thumb**: Higher recall is better when missing positive cases is costly.
-    
-  - **False Positive Rate (FPR)**: FPR is the ratio of false positives to the total number of negatives (false positives + true negatives). It is used to measure how often incorrect positive predictions are made.
-      - **Use Case**: Often used in security applications, like fraud detection or alarms, where false positives should be minimized.
-      - **Rule of Thumb**: Lower FPR is better, as it means fewer false alarms.
-    
-  - **Specificity (TNR)**: Specificity (True Negative Rate) is the ratio of true negatives to the total actual negatives (true negatives + false positives). It measures how well the model identifies negative instances.
-      - **Use Case**: Used in medical testing to correctly identify non-diseased patients.
-      - **Rule of Thumb**: Higher specificity is better when identifying true negatives is important.
-    
-  - **Accuracy**: Accuracy is the ratio of correct predictions (both true positives and true negatives) to the total number of predictions. It is used when both positive and negative predictions are equally important.
-      - **Use Case**: Typically used in balanced classification tasks like image classification.
-      - **Rule of Thumb**: Higher accuracy is better for overall correctness.
-    
-  - **F1 Score**: The F1 Score is the harmonic mean of precision and recall, used when there is a need for a balance between precision and recall.
-      - **Use Case**: Used in document classification or tasks where both false positives and false negatives matter.
-      - **Rule of Thumb**: Higher F1 score means better balance between precision and recall.
-    
-  - **ROC Curve**: The ROC (Receiver Operating Characteristic) curve plots the true positive rate (recall) against the false positive rate at various threshold levels. It is used to evaluate the trade-off between sensitivity and specificity.
-      - **Use Case**: Commonly used in binary classification problems to visualize the model's performance across different thresholds.
-      - **Rule of Thumb**: A higher area under the ROC curve (AUC) indicates better model performance.
-  
-  - **Perplexity**: Perplexity measures how well a model predicts a sequence of tokens (e.g., words). Lower perplexity indicates better performance, as it means the model is better at predicting the next word in a sequence.
-      - **Use Case**: Commonly used for language models, such as evaluating how well a model predicts the next word in a sentence.
-      - **Rule of Thumb**: Lower perplexity means better predictive performance.
+### Performance Metrics  
+- **Average Response Time:** Time taken by model to provide prediction; important for real-time use cases.  
+- **Data Throughput:** Number of requests processed per second; relevant for high-volume environments.  
+- **P95/P99 Latency:** Measures worst-case response times to ensure service level objectives (SLOs).  
+
+***
+
+### Advanced Evaluation Metrics  
+- **ROUGE Score:** Measures overlap between generated text and reference text; used in summarization.  
+- **BLEU Score:** Evaluates the quality of machine-translated text through n-gram matching.  
+- **BERTScore:** Uses contextual embeddings to evaluate semantic similarity in generated text quality.  
+
+***
+
     
   - **Model Training Issues**:
     - **Overfitting**: Too much training on the same data, causing the model to be overly specific.
