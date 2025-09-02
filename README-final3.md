@@ -105,8 +105,8 @@
 
 ### Seven Capabilities of GenAI- ARS,CDPS
 'GenAI was like a versatile artist with Adaptability to learn new styles, Responsiveness to answer instantly, Simplicity to make hard tasks easy, Creativity to invent new masterpieces, Data Efficiency to learn from little, Personalization to tailor art for each viewer, and Scalability to paint many canvases at once—all making it invaluable.'
-| Capability | Description | Business Impact |
-|------------|-------------|-----------------|
+| Capability | Description | 
+|------------|-------------|
 | **Adaptability** | Ability to adjust to new tasks and domains
 | **Responsiveness** | Real-time interaction and quick responses, generate content in real time
 | **Simplicity** | Simplify complex tasks.
