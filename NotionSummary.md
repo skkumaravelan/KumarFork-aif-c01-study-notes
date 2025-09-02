@@ -19,6 +19,7 @@ Evaluation metrics - ROUGE score, BLEU score, BERTScore.
 Tokens, Embeddings, and Vectors
 Generative AI Models - Diffusion Models, Variational Autoencoders (VAEs) and Transformer-Based Models
 Bias in Machine Learning and its types - Human, Algorithmic and Data Skew.
+Benchmark Datasets for Bias Evaluation
 Foundation Models - Types and top five Popular FMs with company name.
 Large Language Models - Types and top five Popular LLMs with company name.
 Embedding Models - BERT, Word2Vec
@@ -37,3 +38,6 @@ AWS Bedrock Pricing Models
 Model Invocation Logging in Amazon Bedrock
 AWS Trusted Advisor for AI Governance
 How Amazon SageMaker JumpStart is different from Amazon BedRock? Both are providing access to pre-built models.
+Data Augmentation and Regularization.
+VPC Endpoints for Secure Data Transfer - Types of EndPoints (Gateway  & Interface). Is it different from AWS PrivateLink?
+AWS Regional vs Global Services
