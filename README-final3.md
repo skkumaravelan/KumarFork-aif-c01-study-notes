@@ -94,14 +94,14 @@
 
 ### Six GenAI Perspectives Framework - BP,GP,SO
 'In a kingdom, the wise council focused on six pillars: Business to grow riches, People to train and care for citizens, Governance to set just rules, Platform to build strong castles, Security to guard the gates, and Operations to keep daily life running smoothly. Together, they balanced strategy, skill, oversight, tech, safety, and routine action.'
-| Perspective | Description | Key Considerations |
-|-------------|-------------|-------------------|
-| **Business** | Value creation and strategic alignment | ROI, competitive advantage, customer experience |
-| **People** | Human impact and workforce transformation | Skills development, change management, job displacement |
-| **Governance** | Oversight and decision-making frameworks | Policies, accountability, ethical guidelines |
-| **Platform** | Technical infrastructure and capabilities | Scalability, integration, performance |
-| **Security** | Protection and risk management | Data privacy, model security, compliance |
-| **Operations** | Day-to-day management and optimization | Monitoring, maintenance, continuous improvement |
+| Perspective | Description |
+|-------------|-------------|
+| **Business** | Value creation and strategic alignment |
+| **People** | Human impact and workforce transformation |
+| **Governance** | Oversight and decision-making frameworks |
+| **Platform** | Technical infrastructure and capabilities |
+| **Security** | Protection and risk management |
+| **Operations** | Day-to-day management and optimization |
 
 ### Seven Capabilities of GenAI- ARS,CDPS
 'GenAI was like a versatile artist with Adaptability to learn new styles, Responsiveness to answer instantly, Simplicity to make hard tasks easy, Creativity to invent new masterpieces, Data Efficiency to learn from little, Personalization to tailor art for each viewer, and Scalability to paint many canvases at once—all making it invaluable.'
@@ -118,27 +118,26 @@
 
 ### AI's Foundational Security Capabilities Framework - BP, GP, SO
 'Guardians of the AI realm watched over six gates: Business aligned the AI quest with goals, People trained the knights, Governance enforced laws, Platform held the fortress’s tech, Security defended against threats, and Operations ensured smooth, ongoing patrols—protecting AI and all it served.'
-| Capability | Description | Implementation Focus |
-|------------|-------------|---------------------|
-| **Business** | AI strategy alignment with business objectives | ROI measurement, risk assessment, stakeholder engagement |
-| **People** | Human-centered AI development and usage | Training programs, ethical guidelines, workforce transformation |
-| **Governance** | Oversight frameworks for AI systems | Policies, compliance, accountability structures |
-| **Platform** | Technical infrastructure and model management | Scalable architectures, model versioning, performance monitoring |
-| **Security** | Protection of AI systems and data | Access controls, encryption, vulnerability management |
-| **Operations** | Day-to-day AI system management | Monitoring, maintenance, incident response, continuous improvement |
+| Capability | Description |
+|------------|-------------|
+| **Business** | AI strategy alignment with business objectives |
+| **People** | Human-centered AI development and usage |
+| **Governance** | Oversight frameworks for AI systems |
+| **Platform** | Technical infrastructure and model management |
+| **Security** | Protection of AI systems and data |
+| **Operations** | Day-to-day AI system management |
 
 ### Core Dimensions of Responsible AI - FESP,VCTG
 'In the land of AI, the Code of Honor had eight tenets: Fairness to treat all justly, Explainability to show clear reasons, Safety to prevent harm, Privacy & Security to guard secrets, Veracity & Robustness to ensure truth and strength, Controllability to keep humans in charge, Transparency to open the AI book, and Governance to uphold the laws—ensuring AI serves well and wisely.'
-| Dimension | Description | Implementation Strategies |
-|-----------|-------------|---------------------------|
-| **Fairness** | Ensuring AI systems treat all individuals and groups equitably | Bias testing, diverse datasets, fairness constraints |
-| **Explainability** | Making AI decisions transparent and understandable | Model interpretability tools, explanation interfaces |
-| **Safety** | Preventing AI systems from causing harm | Robust testing, fail-safes, human oversight |
-| **Privacy & Security** | Protecting personal data and system integrity | Data anonymization, access controls, encryption |
-| **Veracity & Robustness** | Ensuring AI systems are reliable and accurate | Validation testing, adversarial testing, quality assurance |
-| **Controllability** | Maintaining human control over AI systems | Human-in-the-loop design, override capabilities |
-| **Transparency** | Providing clear information about AI system capabilities and limitations | Documentation, model cards, public reporting |
-| **Governance** | Establishing frameworks for responsible AI development and deployment | Policies, oversight committees, compliance frameworks |
+| Dimension | Description |
+| **Fairness** | Ensuring AI systems treat all individuals and groups equitably |
+| **Explainability** | Making AI decisions transparent and understandable |
+| **Safety** | Preventing AI systems from causing harm |
+| **Privacy & Security** | Protecting personal data and system integrity |
+| **Veracity & Robustness** | Ensuring AI systems are reliable and accurate |
+| **Controllability** | Maintaining human control over AI systems |
+| **Transparency** | Providing clear information about AI system capabilities and limitations |
+| **Governance** | Establishing frameworks for responsible AI development and deployment |
 
 ### Governance Strategies for Responsible AI
 
@@ -154,10 +153,6 @@ Ensures users are well-trained on AI capabilities and limitations. It includes s
 ### Organizational Governance  
 Establishes oversight bodies such as AI ethics committees to guide AI use. It develops policies and compliance frameworks to meet legal and ethical standards while engaging regularly with stakeholders and affected communities for transparency and trust.
 
-Here’s a very brief, easy-to-remember story to recall the Governance Strategies for Responsible AI focused on Development, Deployment, Usage, and Organizational governance:
-
-***
-
 In AI land, building smart helpers needs careful rules:  
 - **Development:** A team of experts (ethics, domain, diverse voices) craft AI with safety checks and fairness tests from day one.  
 - **Deployment:** The AI is gently introduced step-by-step, watched closely for impact, and ready for quick fixes if anything goes wrong.  
@@ -166,42 +161,38 @@ In AI land, building smart helpers needs careful rules:
 
 ***
 
-This simple narrative ties the governance pillars into a quick story that covers the main ideas for easy exam recall. Let me know if this works or needs to be even shorter!
-
 ### Disadvantages & Challenges of Generative AI
 
 #### Disadvantages of using gen AI in Production
 'GenAI loves telling tales but sometimes hallucinates with fake facts. It forgets new info (knowledge cutoff), drinks too much power (costly), spills secrets (privacy risk), and confuses folks with its secretive mind (black box). People depend on it too much, and it’s sometimes unfair (bias).'
-| Disadvantage                  | Description                                                     | Mitigation Strategies                                      |
-|------------------------------|-----------------------------------------------------------------|------------------------------------------------------------|
-| **Hallucination**             | Generation of false or nonsensical information                  | RAG implementation, human oversight, confidence scoring    |
-| **Knowledge Cutoff**          | Limited to training data timeframe                              | Regular model updates, real-time data integration           |
-| **Resource and Cost Intensity**| High resource requirements for training and inference        | Model optimization, efficient architectures, cloud spot instances |
-| **Security and Privacy Concerns** | Risks of data leaks and misuse of sensitive information  | Data encryption, access controls, privacy-preserving techniques |
-| **Overreliance on AI**        | Excessive dependence leading to skill atrophy                  | Human-in-the-loop systems, continuous training programs     |
-| **Lack of Explainability (Black Box Problem)** | Difficulty in understanding AI decision processes | Explainable AI methods, model interpretability tools        |
-| **Bias in Outputs**           | Amplification of biases from training data                      | Diverse datasets, bias detection and mitigation frameworks  |
+| Disadvantage                  | Description                                                     |
+| **Hallucination**             | Generation of false or nonsensical information                  |
+| **Knowledge Cutoff**          | Limited to training data timeframe                              |
+| **Resource and Cost Intensity**| High resource requirements for training and inference        |
+| **Security and Privacy Concerns** | Risks of data leaks and misuse of sensitive information  |
+| **Overreliance on AI**        | Excessive dependence leading to skill atrophy                  |
+| **Lack of Explainability (Black Box Problem)** | Difficulty in understanding AI decision processes |
+| **Bias in Outputs**           | Amplification of biases from training data                      |
 
 
 #### Challenges of genAI
 'GenAI can trick with falsehoods (hallucinations), copy others’ work (plagiarism), upset the workplace (work disruption), say offensive things (toxicity), and cause fights over who owns its creations (intellectual property).'
-| Challenge                  | Description                                                   | Mitigation Strategies                                  |
-|----------------------------|---------------------------------------------------------------|--------------------------------------------------------|
-| **Hallucinations**          | Generation of false or misleading information                 | Human review, verification systems, confidence scoring |
-| **Plagiarism and Cheating** | Unauthorized copying or misuse of generated content           | Plagiarism detection tools, ethical guidelines          |
-| **Disruption of the Nature of Work** | Changes in job roles and workflows causing uncertainty | Reskilling programs, human-AI collaboration frameworks  |
-| **Toxicity**                | Generation of harmful, offensive, or biased content           | Content filtering, bias mitigation, continuous monitoring |
-| **Intellectual Property**   | Issues surrounding ownership and rights of AI-generated work  | Clear IP policies, legal frameworks, attribution norms   |
+| Challenge                  | Description                                                   |
+| **Hallucinations**          | Generation of false or misleading information                 |
+| **Plagiarism and Cheating** | Unauthorized copying or misuse of generated content           |
+| **Disruption of the Nature of Work** | Changes in job roles and workflows causing uncertainty |
+| **Toxicity**                | Generation of harmful, offensive, or biased content           |
+| **Intellectual Property**   | Issues surrounding ownership and rights of AI-generated work  |
 
 This table summarizes key challenges of generative AI and their possible mitigation approaches for inclusion in your readme.md. Let me know if any additions or edits are needed.
 #### Ethical and Legal Challenges
-| Challenge | Description | Impact | Mitigation |
-|-----------|-------------|--------|------------|
-| **Toxicity** | Generation of harmful, biased, or inappropriate content | Brand damage, user harm | Content filtering, bias detection, safety guardrails |
-| **Intellectual Property** | Potential copyright infringement in generated content | Legal liability, licensing issues | Training data auditing, attribution systems |
-| **Privacy Concerns** | Inadvertent exposure of sensitive training data | Regulatory violations, trust issues | Data anonymization, privacy-preserving techniques |
-| **Misinformation** | Spreading false or misleading information | Social harm, credibility loss | Fact-checking integration, source attribution |
-| **Job Displacement** | Automation replacing human workers | Economic disruption, social unrest | Reskilling programs, human-AI collaboration |
+| Challenge | Description | Impact |
+|-----------|-------------|--------|
+| **Toxicity** | Generation of harmful, biased, or inappropriate content | Brand damage, user harm |
+| **Intellectual Property** | Potential copyright infringement in generated content | Legal liability, licensing issues |
+| **Privacy Concerns** | Inadvertent exposure of sensitive training data | Regulatory violations, trust issues |
+| **Misinformation** | Spreading false or misleading information | Social harm, credibility loss |
+| **Job Displacement** | Automation replacing human workers | Economic disruption, social unrest |
 
 ### Classifier-Free Guidance (CFG)
 - **Definition**: Parameter controlling how closely diffusion models follow text prompts during image generation
@@ -211,51 +202,65 @@ This table summarizes key challenges of generative AI and their possible mitigat
   - **High CFG (15-20)**: Strict prompt adherence but may reduce image quality
 - **Use Cases**: Image generation refinement, artistic control, prompt precision
 
-### Machine Learning Model Types by Behavior
+***
+### Supervised Learning Types  
+Learning from **labeled** data where input-output pairs are known. Models predict outputs for new inputs based on training.
 
-#### Types of Machine Learning
-| Learning Type | Description | Data Requirement | Key Characteristics |
-|---------------|-------------|------------------|-------------------|
-| **Supervised Learning** | Uses labeled data to train models | Labeled input-output pairs | Learns mapping from input to output |
-| **Unsupervised Learning** | Finds patterns in unlabeled data | Only input data | Discovers hidden structures |
-| **Semi-Supervised Learning** | Combines labeled and unlabeled data | Small amount of labeled + large unlabeled | Leverages both labeled and unlabeled data |
-| **Self-Supervised Learning** | Creates labels from input data itself | Unlabeled data | Generates supervision signal from data |
-| **Reinforcement Learning** | Learns through interaction and rewards | Environment with rewards/penalties | Trial-and-error learning |
-| **Transfer Learning** | Adapts pre-trained models to new tasks | Pre-trained model + target task data | Leverages knowledge from similar tasks |
+| Type                     | Description                                              | Use Case                         | Input Data Type   |  
+|--------------------------|----------------------------------------------------------|---------------------------------|-------------------|  
+| Classification           | Predicts categories/classes                              | Email spam detection            | Labeled           |  
+| Binary Classification    | Two-class classification                                  | Spam vs not spam email          | Labeled           |  
+| Multi-class Classification| Multiple categories                                       | Image recognition (cats, dogs) | Labeled           |  
+| Multi-label Classification| Multiple labels per input                                 | Movie genre tagging             | Labeled           |  
+| Regression               | Predicts continuous values                                | House price prediction          | Labeled           |  
+| Linear Regression        | Fits straight-line relationships                          | Sales vs advertisement spend   | Labeled           |  
+| Polynomial Regression    | Models curved relationships                               | Growth curve modeling           | Labeled           |  
+| Multiple Regression      | Uses multiple inputs to predict output                    | Stock price prediction          | Labeled           |  
 
-#### Supervised Learning Types
-- **Classification**: Predicts discrete categories or classes
-  - **Binary Classification**: Two possible outcomes (spam/not spam)
-  - **Multi-class Classification**: Multiple categories (image categories)
-  - **Multi-label Classification**: Multiple labels per instance
-- **Regression**: Predicts continuous numerical values
-  - **Linear Regression**: Straight-line relationships
-  - **Polynomial Regression**: Curved relationships
-  - **Multiple Regression**: Multiple input variables
+***
+### Unsupervised Learning Types  
+Learns from **unlabeled** data to find hidden structures or patterns.
 
-#### Unsupervised Learning Types
-- **Clustering**: Groups similar data points together
-- **Dimensionality Reduction**: Reduces number of features while preserving information
-- **Association Rule Learning**: Finds relationships between different items
-- **Anomaly Detection**: Identifies unusual or outlier data points
+| Type                     | Description                                              | Use Case                        | Input Data Type   |  
+|--------------------------|----------------------------------------------------------|--------------------------------|-------------------|  
+| Clustering               | Groups similar data points                              | Customer segmentation          | Unlabeled         |  
+| Dimensionality Reduction | Reduces features while retaining info                   | Visualizing high-dimensional data | Unlabeled         |  
+| Association Rule Learning| Finds item co-occurrences                               | Market basket analysis         | Unlabeled         |  
+| Anomaly Detection        | Detects outliers/unusual data                           | Fraud detection                | Unlabeled         |  
 
-#### Semi-Supervised Learning Types
-- **Self-training**: Model predicts labels for unlabeled data iteratively
-- **Co-training**: Multiple models trained on different feature sets
-- **Graph-based**: Uses relationships between data points
+***
+### Semi-Supervised Learning Types  
+Combines a small amount of **labeled** data with large amounts of **unlabeled** data for training.
 
-#### Self-Supervised Learning Types
-- **Contrastive Learning**: Learn by contrasting similar/dissimilar examples
-- **Masked Language Modeling**: Predict masked tokens (BERT approach)
-- **Autoregressive**: Predict next token in sequence (GPT approach)
+| Type                     | Description                                              | Use Case                      | Input Data Type              |  
+|--------------------------|----------------------------------------------------------|------------------------------|-----------------------------|  
+| Self-training            | Model labels unlabeled data iteratively                  | Image labeling                | Mostly unlabeled + some labeled |  
+| Co-training              | Different models trained on different features           | Web page classification      | Mostly unlabeled + some labeled |  
+| Graph-based              | Uses data relations to improve learning                   | Social network analysis      | Mostly unlabeled + some labeled |  
 
-#### Transfer Learning Types
-- **Feature Extraction**: Use pre-trained features with frozen weights
-- **Fine-tuning**: Adapt pre-trained weights to new task
-- **Domain Adaptation**: Transfer between related domains
+***
+### Self-Supervised Learning Types  
+Learns from **unlabeled** data by creating its own supervised signals.
 
-### In-Context Learning
-- **Definition**: A method of enhancing generative AI models by adding additional data and examples to the prompt, helping the model solve tasks more effectively.
+| Type                     | Description                                              | Use Case                        | Input Data Type   |  
+|--------------------------|----------------------------------------------------------|--------------------------------|-------------------|  
+| Contrastive Learning     | Learns by contrasting similar vs dissimilar pairs        | Image similarity search        | Unlabeled         |  
+| Masked Language Modeling | Predicts hidden parts (e.g., missing words)               | Language understanding (BERT)  | Unlabeled         |  
+| Autoregressive           | Predicts next item in a sequence                           | Text generation (GPT)          | Unlabeled         |  
+
+***
+### Transfer Learning Types  
+Leverages pre-trained models on new but related tasks with smaller datasets.
+
+| Type                     | Description                                              | Use Case                       | Input Data Type               |  
+|--------------------------|----------------------------------------------------------|-------------------------------|------------------------------|  
+| Feature Extraction       | Uses frozen features from pre-trained models              | Image classification with pre-trained CNN | Labeled (target task)        |  
+| Fine-tuning              | Adjusts pre-trained models to new domains                 | Domain-specific language models | Labeled (target task)        |  
+| Domain Adaptation        | Transfers learning between related domains                | News to social media text      | Labeled (source + target)    |  
+
+***
+These concise descriptions with real-world uses and data types provide clarity and easy recall for exam preparation. Let me know if a formatted table or more examples are needed.
+
 
 ### Advanced Prompt Engineering Techniques
 
