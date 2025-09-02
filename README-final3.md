@@ -92,7 +92,7 @@
 
 ## Concepts
 
-### Six GenAI Perspectives Framework
+### Six GenAI Perspectives Framework - BPGPSO
 | Perspective | Description | Key Considerations |
 |-------------|-------------|-------------------|
 | **Business** | Value creation and strategic alignment | ROI, competitive advantage, customer experience |
