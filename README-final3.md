@@ -92,7 +92,7 @@
 
 ## Concepts
 
-### Six GenAI Perspectives Framework - BPGPSO
+### Six GenAI Perspectives Framework - BP,GP,SO
 | Perspective | Description | Key Considerations |
 |-------------|-------------|-------------------|
 | **Business** | Value creation and strategic alignment | ROI, competitive advantage, customer experience |
@@ -102,16 +102,17 @@
 | **Security** | Protection and risk management | Data privacy, model security, compliance |
 | **Operations** | Day-to-day management and optimization | Monitoring, maintenance, continuous improvement |
 
-### Seven Capabilities of GenAI
+### Seven Capabilities of GenAI- ARS,CDPS
 | Capability | Description | Business Impact |
 |------------|-------------|-----------------|
-| **Adaptability** | Ability to adjust to new tasks and domains | Flexible solution deployment across use cases |
-| **Responsiveness** | Real-time interaction and quick responses | Enhanced user experience and productivity |
-| **Creativity** | Generate novel and innovative content | New product development and creative solutions |
-| **Personalization** | Tailor outputs to individual preferences | Improved customer engagement and satisfaction |
-| **Scalability** | Handle varying workloads efficiently | Cost-effective expansion of AI capabilities |
-| **Multi-modality** | Process different data types simultaneously | Rich, comprehensive AI applications |
-| **Reasoning** | Logical thinking and problem-solving | Complex decision support and analysis |
+| **Adaptability** | Ability to adjust to new tasks and domains
+| **Responsiveness** | Real-time interaction and quick responses, generate content in real time
+| **Simplicity** | Simplify complex tasks.
+| **Creativity & Exploration** | Generate novel ideas, designs, or solutions.
+| **Data efficiency** | Learn from relatively small amounts of data
+| **Personalization** | Create personalized content tailored to individual preferences or characteristics.
+| **Scalability** | Generate large amounts of content quickly and handle varying workloads efficiently
+
 
 ### AI's Foundational Security Capabilities Framework
 | Capability | Description | Implementation Focus |
