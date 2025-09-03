@@ -186,55 +186,58 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
 | **Validation Set** | Hyperparameter tuning | 10-20% | Used during training for model selection |
 | **Test Set** | Final evaluation | 10-20% | Never used during training, unbiased evaluation |
 
-Here are brief explanations of each concept in structured and unstructured data processing, as well as data augmentation and regularization, commonly used in machine learning and data science workflows:[5][6]
-
-## Structured Data Processing
-
-Here are easy-to-remember, simple definitions for each term:
+Here’s a neat Markdown format ready for you to paste, using headers, bullet points, and tables for easy reading and reference:
 
 ***
 
-**Normalization:**  
-Puts all numbers between 0 and 1, so every feature is on the same scale.  
-*Think: “Squish everything into the 0–1 box.”*[1][3][5]
+# Structured Data Processing
 
-**Standardization:**  
-Changes values so they have an average of 0 and spread (standard deviation) of 1.  
-*Think: “Center everything at zero, with most values within 1 step around it.”*[3][5][1]
+[Source: Structured Data Processing](https://github.com/skkumaravelan/KumarFork-aif-c01-study-notes/blob/main/README-final5.md#structured-data-processing)
+
+| Term               | Easy Definition                                                                             | Memory Trick                                                                  |
+|--------------------|---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| **Normalization**  | Puts all numbers between 0 and 1, so every feature is on the same scale.                    | “Squish everything into the 0–1 box.”                                         |
+| **Standardization**| Changes values so they have average 0 and spread (std dev) 1.                               | “Center everything at zero, most values within 1 step around it.”             |
+| **Encoding**       | Converts categorical variables to numbers (One-hot, Label, Target encoding).                 | "Turn words into numbers for the computer."                                   |
+| **Handling Missing Values** | Fills missing data using mean/median, deletes incomplete records, or flags missingness.        | "Fill, drop, or mark what’s missing."                                         |
 
 ***
-- **Encoding**: Converts categorical variables into a numerical format—for example, using One-hot (binary columns for each category), Label (assigning numbers to categories), or Target encoding (using target statistics).[5]
-- **Handling Missing Values**: Deals with absent data using strategies like imputation (filling with mean/median/most common value), deletion (removing incomplete records), or flagging (marking missing as an indicator feature).[6]
 
-## Unstructured Data Processing
+# Unstructured Data Processing
 
-- **Tokenization**: Splits raw text into smaller units—words, subwords, or characters—allowing further text analysis or processing.[5]
-- **Vectorization**: Translates text into numeric representations (e.g., TF-IDF, word embeddings), so algorithms can use the data.[5]
-- **Image Processing**: Applies techniques like resizing, normalization, and augmentation (rotating, flipping) to prepare images for computer vision tasks.[5]
-- **Audio Processing**: Extracts numerical features (such as Mel-frequency cepstral coefficients—MFCCs, or spectrograms) from speech or audio for analysis or modeling.[5]
+[Source: Unstructured Data Processing](https://github.com/skkumaravelan/KumarFork-aif-c01-study-notes/blob/main/README-final5.md#unstructured-data-processing)
 
-## Data Augmentation and Regularization
+- **Tokenization:** Break text into words or units for analysis.
+- **Vectorization:** Turn text into numbers (like TF-IDF or embeddings).
+- **Image Processing:** Prep images by resizing, normalizing, or augmenting (rotate, flip).
+- **Audio Processing:** Extract features (like MFCCs, spectrograms) from sound files.
 
-### Data Augmentation
+***
 
-- **Images**: Creates new samples from originals by rotating, flipping, cropping, or adjusting color, increasing data variety.[6][5]
-- **Text**: Generates synthetic data using methods like synonym replacement, back-translation, or paraphrasing to enrich the dataset.[6]
-- **Audio**: Alters audio data by stretching time, shifting pitch, or adding noise, augmenting the dataset.[6]
+# Data Augmentation and Regularization
 
-### Regularization
+[Source: Data Augmentation and Regularization](https://github.com/skkumaravelan/KumarFork-aif-c01-study-notes/blob/main/README-final5.md#data-augmentation-and-regularization)
 
-**L1 (Lasso):**  
-Pushes many model weights to exactly zero, picking out the most important features.  
-*Think: “Keep only the key things — make most weights vanish.”*[8]
+## Data Augmentation
 
-**L2 (Ridge):**  
-Shrinks all weights but never makes them completely zero; helps prevent the model from memorizing noise.  
-*Think: “Reduce all weights a little so nothing gets too big.”*[8]
+| Type      | What Happens                                                                           |
+|-----------|----------------------------------------------------------------------------------------|
+| Images    | Create new images by rotating, flipping, cropping, or changing color.                  |
+| Text      | Make new text using synonyms, back-translation, or paraphrasing.                       |
+| Audio     | Change audio by stretching time, shifting pitch, or adding noise.                      |
 
-- **Dropout**: Randomly disables neurons during neural network training to reduce dependence on specific nodes and prevent overfitting.[5]
-- **Early Stopping**: Halts training when model performance on a validation set stops improving, avoiding overfitting.[5]
+## Regularization
 
-These steps and techniques are essential for preparing, transforming, and optimizing data for improved machine learning performance.[6][5]
+| Term            | Easy Definition                                        | Memory Trick                                      |
+|-----------------|--------------------------------------------------------|---------------------------------------------------|
+| **L1 (Lasso)**  | Pushes many model weights to zero, keeps only important ones. | “Keep only the key things—make most vanish.”   |
+| **L2 (Ridge)**  | Shrinks all weights but not to zero; avoids overfitting.     | “Reduce all weights a little—nothing too big.” |
+| **Dropout**     | Randomly disables some neurons during training.               | "Hide random wires so model doesn’t depend too much on any." |
+| **Early Stopping** | Stops training when validation score stops improving.          | "Quit as soon as the model stops getting better."   |
+
+***
+
+These steps and techniques are essential for cleaning and optimizing data for machine learning models.
 
 - **How to Clean Data**:
   - **AWS Glue Transformations**: Glue has built-in transformations for tasks like removing duplicates or filling missing values, and allows custom transformations using Python or Spark.
