@@ -186,48 +186,38 @@ The ML Pipeline is a systematic process used to build, train, and deploy machine
 | **Validation Set** | Hyperparameter tuning | 10-20% | Used during training for model selection |
 | **Test Set** | Final evaluation | 10-20% | Never used during training, unbiased evaluation |
 
-#### Structured Data Processing
-- **Normalization**: Scale features to [0,1] range using Min-Max scaling
-- **Standardization**: Center data with mean=0, std=1 using Z-score
-- **Encoding**: Convert categorical variables (One-hot, Label, Target encoding)
-- **Handling Missing Values**: Imputation, deletion, or flagging strategies
+Here are brief explanations of each concept in structured and unstructured data processing, as well as data augmentation and regularization, commonly used in machine learning and data science workflows:[5][6]
 
-Structured Data Processing
-Normalization: Adjusts numeric features to a standard range (typically ) using Min-Max scaling, making them comparable and helping algorithms converge efficiently.
+## Structured Data Processing
 
-Standardization: Centers data by transforming features to have a mean of 0 and standard deviation of 1 using the Z-score, which removes biases from features on different scales.
+- **Normalization**: Adjusts numeric features to a standard range (typically ) using Min-Max scaling, making them comparable and helping algorithms converge efficiently.[1][6][5]
+- **Standardization**: Centers data by transforming features to have a mean of 0 and standard deviation of 1 using the Z-score, which removes biases from features on different scales.[5]
+- **Encoding**: Converts categorical variables into a numerical format—for example, using One-hot (binary columns for each category), Label (assigning numbers to categories), or Target encoding (using target statistics).[5]
+- **Handling Missing Values**: Deals with absent data using strategies like imputation (filling with mean/median/most common value), deletion (removing incomplete records), or flagging (marking missing as an indicator feature).[6]
 
-Encoding: Converts categorical variables into a numerical format—for example, using One-hot (binary columns for each category), Label (assigning numbers to categories), or Target encoding (using target statistics).
+## Unstructured Data Processing
 
-Handling Missing Values: Deals with absent data using strategies like imputation (filling with mean/median/most common value), deletion (removing incomplete records), or flagging (marking missing as an indicator feature).
+- **Tokenization**: Splits raw text into smaller units—words, subwords, or characters—allowing further text analysis or processing.[5]
+- **Vectorization**: Translates text into numeric representations (e.g., TF-IDF, word embeddings), so algorithms can use the data.[5]
+- **Image Processing**: Applies techniques like resizing, normalization, and augmentation (rotating, flipping) to prepare images for computer vision tasks.[5]
+- **Audio Processing**: Extracts numerical features (such as Mel-frequency cepstral coefficients—MFCCs, or spectrograms) from speech or audio for analysis or modeling.[5]
 
-Unstructured Data Processing
-Tokenization: Splits raw text into smaller units—words, subwords, or characters—allowing further text analysis or processing.
+## Data Augmentation and Regularization
 
-Vectorization: Translates text into numeric representations (e.g., TF-IDF, word embeddings), so algorithms can use the data.
+### Data Augmentation
 
-Image Processing: Applies techniques like resizing, normalization, and augmentation (rotating, flipping) to prepare images for computer vision tasks.
+- **Images**: Creates new samples from originals by rotating, flipping, cropping, or adjusting color, increasing data variety.[6][5]
+- **Text**: Generates synthetic data using methods like synonym replacement, back-translation, or paraphrasing to enrich the dataset.[6]
+- **Audio**: Alters audio data by stretching time, shifting pitch, or adding noise, augmenting the dataset.[6]
 
-Audio Processing: Extracts numerical features (such as Mel-frequency cepstral coefficients—MFCCs, or spectrograms) from speech or audio for analysis or modeling.
+### Regularization
 
-Data Augmentation and Regularization
-Data Augmentation
-Images: Creates new samples from originals by rotating, flipping, cropping, or adjusting color, increasing data variety.
+- **L1 (Lasso)**: Encourages sparsity by shrinking some model weights to zero, which acts as automatic feature selection.[5]
+- **L2 (Ridge)**: Penalizes large weights to prevent the model from fitting noise (overfitting).[5]
+- **Dropout**: Randomly disables neurons during neural network training to reduce dependence on specific nodes and prevent overfitting.[5]
+- **Early Stopping**: Halts training when model performance on a validation set stops improving, avoiding overfitting.[5]
 
-Text: Generates synthetic data using methods like synonym replacement, back-translation, or paraphrasing to enrich the dataset.
-
-Audio: Alters audio data by stretching time, shifting pitch, or adding noise, augmenting the dataset.
-
-Regularization
-L1 (Lasso): Encourages sparsity by shrinking some model weights to zero, which acts as automatic feature selection.
-
-L2 (Ridge): Penalizes large weights to prevent the model from fitting noise (overfitting).
-
-Dropout: Randomly disables neurons during neural network training to reduce dependence on specific nodes and prevent overfitting.
-
-Early Stopping: Halts training when model performance on a validation set stops improving, avoiding overfitting.
-
-These steps and techniques are essential for preparing, transforming, and optimizing data for improved machine learning performance.
+These steps and techniques are essential for preparing, transforming, and optimizing data for improved machine learning performance.[6][5]
 
 - **How to Clean Data**:
   - **AWS Glue Transformations**: Glue has built-in transformations for tasks like removing duplicates or filling missing values, and allows custom transformations using Python or Spark.
